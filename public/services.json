@@ -1,0 +1,50 @@
+[{
+        "id": "s0",
+        "serviceurl": "strategiskraedgivning",
+        "servicetitle": "Strategisk rådgivning",
+        "servicenummer": "01.",
+        "servicebeskrivelse": "Strategisk rådgivning, der baner vejen",
+        "servicepunkt": [
+            "Klar strategi for vækst",
+            "Handlingsplaner der virker",
+            "Løbende sparring"
+        ]
+    },
+    {
+        "id": "s2",
+        "serviceurl": "seo",
+        "servicetitle": "SEO (Søgemaskine optimering)",
+        "servicenummer": "02.",
+        "servicebeskrivelse": "Bliv set med effektiv SEO",
+        "servicepunkt": [
+            "Bedre Google-placeringer",
+            "Optimeret indhold og teknik",
+            "Løbende forbedringer"
+        ]
+    },
+    {
+        "id": "s3",
+        "serviceurl": "webdesign",
+        "servicetitle": "Webdesign",
+        "servicenummer": "03.",
+        "servicebeskrivelse": "Skræddersyet WordPress design",
+        "servicepunkt": [
+            "Unikt og mobilvenligt design",
+            "SEO-optimerede løsninger",
+            "Brugervenlig funktionalitet"
+        ]
+    },
+    {
+        "id": "s4",
+        "serviceurl": "googleads",
+        "servicetitle": "Google Ads",
+        "servicenummer": "04.",
+        "servicebeskrivelse": "Flere kunder med skarpe Google Ads",
+        "servicepunkt": [
+            "Kampagner der konverterer",
+            "Optimeret budgetforbrug",
+            "Performance-tracking"
+        ]
+    }
+
+]

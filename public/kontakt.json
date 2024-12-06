@@ -1,4 +1,5 @@
 [{
+        "id": "k1",
         "kontaktimg": "",
         "kontaktalt": "Closeup af Mette Line",
         "kontaktbeskrivelse": "Frisk på at høre hvad vi kan gøre for dig? Kontakt os i dag, så vi kan skabe resultater sammen.",
@@ -6,6 +7,7 @@
         "personbeskrivelse": "Webudvikler, Designer & Projektleder"
     },
     {
+        "id": "k2",
         "kontaktimg": "",
         "kontaktalt": "Closeup af Albinot",
         "kontaktbeskrivelse": "Har du spørgsmål eller vil vide mere om hvordan vi har skabt målbare resultater for vores kunder, så send os en besked. Vi er klar til at finde den rette løsning til dig.",
@@ -13,6 +15,7 @@
         "personbeskrivelse": "Co-founder"
     },
     {
+        "id": "k3",
         "kontaktimg": "",
         "kontaktalt": "Closeup af Thorbjørn",
         "kontaktbeskrivelse": "Har du spørgsmål eller vil vide mere om hvordan vi har skabt målbare resultater for vores kunder, så send os en besked. Vi er klar til at finde den rette løsning til dig.",
