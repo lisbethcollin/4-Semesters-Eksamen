@@ -1,13 +1,17 @@
 ---
 import Button from '../components/Button.astro';
+
+
+
 const { kontaktimg, kontaktalt, kontaktbeskrivelse, personnavn, personbeskrivelse } = Astro.props;
 ---
 
 <section>
     <h3 class="font-albert font-bold text-4xl">Gør dine ambitioner <br> til virkelighed</h3>
-    <p class="font-outfit text-xl">{kontaktbeskrivelse}</p>
+    
     <div class="grid grid-cols-5 gap-10">
         <article class="col-span-2">
+            <p class="font-outfit text-xl">{kontaktbeskrivelse}</p>
             <img src={kontaktimg} alt={kontaktalt}>
             <p class="font-outfit font-semibold">{personnavn}</p>
             <p class="font-outfit">{personbeskrivelse}</p>
