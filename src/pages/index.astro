@@ -2,8 +2,27 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 ---
-<MainLayout title="Titel">
-	<article>
-		<p>Index indhold</p>
+<MainLayout title="Titel" class="">
+<!--  -->
+	<article class="bg-cover bg-center bg-[url('/src/assets/images/forsideweb.png')] mt-24">
+
+<section class="grid grid-cols-1 gap-16 p-20 ">
+	<h1 class=" pt-24 text-6xl font-albert font-black text-darkblue-500">DIGITAL <span class="font-light" >MARKETING </span> <br>
+OG WEB BUREAU</h1>
+	<p class="text-base max-w-md font-outfit text-darkblue-500" >Full-service digitalt marketingbureau med høje ambitioner for vores kunder og målrettede resultater der kan hjælpe dig til det næste niveau</p>
+	</section>
+
+
+<section class="py-24">
+	<ul class="flex justify-center items-center space-x-6 list-none p-0 m-0 font-albert text-xl"> 
+<li class=" text-darkblue-500"><a href="/../services.html">SEO</a></li>
+<li class="relative mx-8 text-darkblue-500 before:content-['/'] before:absolute before:-left-4 before:text-blue-500 "><a href="/../services.html">Google Ads</a></li>
+<li class="relative mx-8 text-darkblue-500 before:content-['/'] before:absolute before:-left-4 before:text-blue-500 "><a href="/../services.html">Webdesign</a></li>
+<li class="relative mx-8 text-darkblue-500 before:content-['/'] before:absolute before:-left-4 before:text-blue-500 "><a href="/../services.html">SoMe</a></li>
+<li class="relative mx-8 text-darkblue-500 before:content-['/'] before:absolute before:-left-4 before:text-blue-500 "><a href="/../services.html">Strategi</a></li>
+	</ul>
+</section>
+		
 	</article>
+	
 </MainLayout>
