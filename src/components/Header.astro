@@ -2,6 +2,7 @@
 import { Image } from 'astro:assets';
 import logo from "../assets/images/logo.png";
 import burgermenu from "../assets/images/burgermenu.svg";
+import Button from '../components/Button.astro';
 ---
 
 <div x-data="{ showmenu: false }" class="header p-4 fixed top-0 left-0 w-full bg-beige-500 z-50" >
@@ -25,8 +26,8 @@ import burgermenu from "../assets/images/burgermenu.svg";
     <nav id="mobilmenu" class="flex flex-col content-center pt-4 lg:hidden" 
     x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
         <ul class=" text-darkblue-500 font-outfit text-2xl ">
-            <li class="text-center py-2 border-y-2"><a href="/../movieoverview.html">Services</a></li>
-            <li class="text-center py-2 border-b-2"><a href="/#gavekort">Om os</a></li>
+            <li class="text-center py-2 border-y-2"><a href="/../services.html">Services</a></li>
+            <li class="text-center py-2 border-b-2"><a href="/#om os">Om os</a></li>
             <li class="text-center py-2 border-b-2"><a href="/../about.html">Cases</a></li>
             <li class="text-center py-2 border-b-2"><a href="#kontakt">Blog</a></li>
         </ul>
