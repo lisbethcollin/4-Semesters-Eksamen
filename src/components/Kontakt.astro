@@ -17,15 +17,17 @@ const { kontaktimg, kontaktalt, kontaktbeskrivelse, personnavn, personbeskrivels
                 <section>
                     <article>
                         <div>
-                            <input
+                            <label for="navn" class="required innerlabel">Navn</label>
+                            <input type="text" name="navn" size="80" placeholder="Anders And" required
                             x-on:click="selectedInput = 1"
                             x-bind:class="selectedInput === 1 ? 'border-2 border-darkblue-400' : 'hover:border-2 hover:border-red-500'"
-                            class="p-2 bg-beige-500 cursor-pointer transition duration-200 ease-in-out max-w-72 md:w-auto lg:max-w-72 flex flex-col items-center border-2 border-beige-500 drop-shadow-drop">
+                            class="p-2 bg-beige-500 cursor-pointer transition duration-200 ease-in-out max-w-72 md:w-auto lg:max-w-72 flex flex-col items-center border-2 border-beige-500 drop-shadow-drop"/>
                             
                             </input>
                         </div>
                         <div>
-                            <input
+                            <label for="tlf" class="required innerlabel">Telefonnummer</label>
+                            <input type="number" name="tlf" size="80" placeholder="8888 8888" required
                             x-on:click="selectedInput = 2"
                             x-bind:class="selectedInput === 2 ? 'border-2 border-darkblue-400' : 'hover:border-2 hover:border-red-500'"
                             class="p-2 bg-beige-500 cursor-pointer transition duration-200 ease-in-out max-w-72 md:w-auto lg:max-w-72 flex flex-col items-center border-2 border-beige-500 drop-shadow-drop">
@@ -34,7 +36,8 @@ const { kontaktimg, kontaktalt, kontaktbeskrivelse, personnavn, personbeskrivels
                         </div>
                     </article>
                     <div>
-                        <input
+                        <label for="email" class="required innerlabel">Email</label>
+                        <input type="email" name="email" size="80" placeholder="andersand@andeby.dk" required
                         x-on:click="selectedInput = 3"
                         x-bind:class="selectedInput === 3 ? 'border-2 border-darkblue-400' : 'hover:border-2 hover:border-red-500'"
                         class="p-2 bg-beige-500 cursor-pointer transition duration-200 ease-in-out max-w-72 md:w-auto lg:max-w-72 flex flex-col items-center border-2 border-beige-500 drop-shadow-drop">
@@ -42,7 +45,8 @@ const { kontaktimg, kontaktalt, kontaktbeskrivelse, personnavn, personbeskrivels
                         </input>
                     </div>
                     <div>
-                        <input
+                        <label for="besked" class="required innerlabel">Besked</label>
+                        <input type="text" name="besked" size="128" placeholder="Jeg mangler en ny hjemmeside, kan i hjælpe med det?"  required
                         x-on:click="selectedInput = 4"
                         x-bind:class="selectedInput === 4 ? 'border-2 border-darkblue-400' : 'hover:border-2 hover:border-red-500'"
                         class="p-2 bg-beige-500 cursor-pointer transition duration-200 ease-in-out max-w-72 md:w-auto lg:max-w-72 flex flex-col items-center border-2 border-beige-500 drop-shadow-drop">
@@ -58,3 +62,22 @@ const { kontaktimg, kontaktalt, kontaktbeskrivelse, personnavn, personbeskrivels
         </form>
     </article>
 </section>
+
+<style>
+    .innerLabel {
+        margin-top: 9px;
+        position: absolute;
+        margin-left: 7px;
+        
+    }
+
+    input[type=text] {
+        background-color: #eeeeee;
+        border: solid 1px lightgray;
+        border-style: solid;
+        padding: 11px 2px 0px 4px;
+        font-size: 17px;
+        color: darkslategray;
+        line-height: 31px;
+    }
+</style>
