@@ -1,9 +1,17 @@
 ---
-const { coverimage, coveralt, posturl, posttitle, time1, time2, kortversion } = Astro.props;
+const { serviceurl, servicetitle, servicenummer, servicebeskrivelse, servicepunkt1, servicepunkt2, servicepunkt3, } = Astro.props;
 ---
 
-<a href={posturl}>
+<a href={serviceurl}>
     <section>
-        
+        <p>{servicenummer}</p>
+        <h4>{servicetitle}</h4>
+        <p>{servicebeskrivelse}</p>
+        <hr>
+        <ul>
+            <li>{servicepunkt1}</li>
+            <li>{servicepunkt2}</li>
+            <li>{servicepunkt3}</li>
+        </ul>
     </section>
 </a>
