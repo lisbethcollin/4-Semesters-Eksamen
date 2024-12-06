@@ -1,0 +1,15 @@
+---
+const { coverimg, coveralt, caseurl, casetitle, casepunkt1, casepunkt2, casepunkt3} = Astro.props;
+---
+
+<a href={caseurl}>
+    <section>
+        <img src={coverimg} alt={coveralt}>
+        <h3>{casetitle}</h3>
+        <ul>
+            <li>{casepunkt1}</li>
+            {casepunkt2 && <li>{casepunkt2}</li>}
+            {casepunkt3 && <li>{casepunkt3}</li>}
+        </ul>
+    </section>
+</a>
