@@ -3,28 +3,28 @@
 @tailwind utilities;
 
 /* Standart elementer med samme styling */
-@layer base {
+/* @layer base {
   h1 {
     @apply text-6xl;
     @apply color-darkblue-500;
-    @apply font-extrabold; /* Font weight */
+    @apply font-extrabold; /* Font weight
   }
   h2 {
     @apply text-5xl;
     @apply color-darkblue-500;
   }
   p {
-    @apply text-base; /* Font size */
-    @apply leading-6; /* Line height */
-    @apply color-darkblue-500; /* Text color */
+    @apply text-base; /* Font size 
+    @apply leading-6; /* Line height 
+    @apply color-darkblue-500; /* Text color 
     
   }
 }
 
-/* Egne klasser med samme styling */
+/* Egne klasser med samme styling 
 @layer utilities {
     .tal {
       @apply color-blue-500;
       @apply font-extrabold;
     }
-  }
+  } */
