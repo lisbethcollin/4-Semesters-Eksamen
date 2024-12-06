@@ -1,31 +1,34 @@
 ---
 import { Image } from 'astro:assets';
-import logo from "../assets/images/logo.svg";
+import logo from "../assets/images/logo.png";
 import burgermenu from "../assets/images/burgermenu.svg";
 ---
 
-<div x-data="{ showmenu: false }" class="header p-4 fixed top-0 left-0 w-full bg-blue-700 z-50" >
+<div x-data="{ showmenu: false }" class="header p-4 fixed top-0 left-0 w-full bg-beige-500 z-50" >
     <div id="navbar" class="flex flex-row justify-between items-center md:mx-20">
         <div id="logo" class="">
             <a href="/../index.html"><Image class="w-40" src={logo} alt=""/></a>
         </div>
         <nav id="desktopmenu" class="hidden lg:block">
-            <ul class="flex flex-row gap-4 text-2xl text-beige-100 font-mos">
-                <li class=""><a href="/../movieoverview.html">Film</a></li>
-                <li class="px-12"><a href="/#gavekort">Gavekort</a></li>
-                <li class=""><a href="/../about.html">Om os</a></li>
-                <li class="pl-12"><a href="#kontakt">Kontakt</a></li>
+            <ul class="flex flex-row gap-4 text-2xl text-darkblue-500 font-outfit">
+                <li class=""><a href="/../services.html">Services</a></li>
+                <li class="px-12"><a href="/#">Om os</a></li>
+                <li class=""><a href="/../cases.html">Cases</a></li>
+                <li class="pl-12"><a href="#">Blog</a></li>
             </ul>
         </nav>
+         <div class="hidden lg:block">
+          <Button >Støt nu</Button>
+        </div>
         <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu"><Image src={burgermenu} alt=""/></button>
     </div>
     <nav id="mobilmenu" class="flex flex-col content-center pt-4 lg:hidden" 
     x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
-        <ul class=" text-beige-100 font-mos text-2xl ">
-            <li class="text-center py-2 border-y-2"><a href="/../movieoverview.html">Film</a></li>
-            <li class="text-center py-2 border-b-2"><a href="/#gavekort">Gavekort</a></li>
-            <li class="text-center py-2 border-b-2"><a href="/../about.html">Om os</a></li>
-            <li class="text-center py-2 border-b-2"><a href="#kontakt">Kontakt</a></li>
+        <ul class=" text-darkblue-500 font-outfit text-2xl ">
+            <li class="text-center py-2 border-y-2"><a href="/../movieoverview.html">Services</a></li>
+            <li class="text-center py-2 border-b-2"><a href="/#gavekort">Om os</a></li>
+            <li class="text-center py-2 border-b-2"><a href="/../about.html">Cases</a></li>
+            <li class="text-center py-2 border-b-2"><a href="#kontakt">Blog</a></li>
         </ul>
     </nav>
 </div>
