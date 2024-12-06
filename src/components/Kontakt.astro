@@ -4,86 +4,55 @@ const { kontaktimg, kontaktalt, kontaktbeskrivelse, personnavn, personbeskrivels
 ---
 
 <section>
-    <h3>Gør dine ambitioner <br> til virkelighed</h3>
-    <p>{kontaktbeskrivelse}</p>
-    <article>
-        <img src={kontaktimg} alt={kontaktalt}>
-        <p>{personnavn}</p>
-        <p>{personbeskrivelse}</p>
-    </article>
-    <article>
-        <form>
-            <div x-data="{ selectedInput: null }">
-                <section class="form-wrapper">
-                    <article>
-                        <div class="full-input">
-                            <label for="navn">Navn
-                                <input type="text" name="navn" size="80" placeholder="Anders And" 
+    <h3 class="font-albert font-bold text-4xl">Gør dine ambitioner <br> til virkelighed</h3>
+    <p class="font-outfit text-xl">{kontaktbeskrivelse}</p>
+    <div class="grid grid-cols-5 gap-10">
+        <article class="col-span-2">
+            <img src={kontaktimg} alt={kontaktalt}>
+            <p class="font-outfit font-semibold">{personnavn}</p>
+            <p class="font-outfit">{personbeskrivelse}</p>
+        </article>
+        <article class="col-span-3" >
+            <form>
+                <div x-data="{ selectedInput: null }">
+                    <section class="m-10">
+                        <article class="grid grid-cols-2 gap-5">
+                            <label for="navn"
                                 x-on:click="selectedInput = 1"
-                                x-bind:class="selectedInput === 1 ? 'border-2 border-darkblue-400' : 'hover:border-2 hover:border-red-500'"
-                                class="p-2 bg-beige-500 cursor-pointer transition duration-200 ease-in-out max-w-72 md:w-auto lg:max-w-72 flex flex-col items-center border-2 border-beige-500 "/>
-                    
-                                </input>
+                                x-bind:class="selectedInput === 1 ? 'border-b-2 border-b-darkblue-600' : 'hover:border-b-2 hover:border-b-blue-500'"
+                                class="block border-b-2 shadow-web border-orange-500 mb-4 text-darkblue-500 font-albert">
+                                <p class="font-semibold text-2xl ml-3 mt-2 mb-1">Navn</p>
+                                <input type="text" name="navn" placeholder="Anders And" class="block border-none outline-none focus:ring-0 w-full placeholder:italic placeholder:text-darkblue-200 text-darkblue-500 bg-transparent"/></input>
                             </label>
-                        </div>
-                        <div class="full-input">
-                            <label for="tlf">Telefonnummer
-                            <input type="number" name="tlf" size="80" placeholder="8888 8888" 
-                            x-on:click="selectedInput = 2"
-                            x-bind:class="selectedInput === 2 ? 'border-2 border-darkblue-400' : 'hover:border-2 hover:border-red-500'"
-                            class="p-2 bg-beige-500 cursor-pointer transition duration-200 ease-in-out max-w-72 md:w-auto lg:max-w-72 flex flex-col items-center border-2 border-beige-500 ">
-                            
-                            </input>
-                        </label>
-                        </div>
-                    </article>
-                    <div class="full-input">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" size="80" placeholder="andersand@andeby.dk" 
+                            <label for="tlf"
+                                x-on:click="selectedInput = 2"
+                                x-bind:class="selectedInput === 2 ? 'border-b-2 border-b-darkblue-600' : 'hover:border-b-2 hover:border-b-blue-500'"
+                                class="block border-b-2 shadow-web border-orange-500 mb-4">
+                                <p class="font-semibold text-2xl ml-3 mt-2 mb-1">Telefonnummer</p>
+                                    <input type="tel" name="tlf" placeholder="8888 8888" class="block border-none outline-none focus:ring-0 w-full placeholder:italic placeholder:text-darkblue-200 text-darkblue-500 bg-transparent"></input>
+                            </label>
+                        </article>
+                        <label for="email"
                         x-on:click="selectedInput = 3"
-                        x-bind:class="selectedInput === 3 ? 'border-2 border-darkblue-400' : 'hover:border-2 hover:border-red-500'"
-                        class="p-2 bg-beige-500 cursor-pointer transition duration-200 ease-in-out max-w-72 md:w-auto lg:max-w-72 flex flex-col items-center border-2 border-beige-500 ">
-                        
-                        </input>
-                    </div>
-                    <div class="full-input">
-                        <label for="besked">Besked</label>
-                        <input type="text" name="besked" size="128" placeholder="Jeg mangler en ny hjemmeside, kan i hjælpe med det?"  
+                        x-bind:class="selectedInput === 3 ? 'border-b-2 border-b-darkblue-600' : 'hover:border-b-2 hover:border-b-blue-500'"
+                        class="block border-b-2 shadow-web border-orange-500 mb-4">
+                        <p class="font-semibold text-2xl ml-3 pt-2 mb-1">Email</p>
+                            <input type="email" name="email" placeholder="andersand@andeby.dk" class="block border-none outline-none focus:ring-0 w-full placeholder:italic placeholder:text-darkblue-200 text-darkblue-500 bg-transparent"></input>
+                        </label>
+                        <label for="besked"
                         x-on:click="selectedInput = 4"
-                        x-bind:class="selectedInput === 4 ? 'border-2 border-darkblue-400' : 'hover:border-2 hover:border-red-500'"
-                        class="p-2 bg-beige-500 cursor-pointer transition duration-200 ease-in-out max-w-72 md:w-auto lg:max-w-72 flex flex-col items-center border-2 border-beige-500 ">
-                        
-                        </input>
-                    </div>
+                        x-bind:class="selectedInput === 4 ? 'border-b-2 border-b-darkblue-600' : 'hover:border-b-2 hover:border-b-blue-500'"
+                        class="grid items-end content-between border-b-2 shadow-web border-orange-500 mb-4 h-32">
+                        <p class="font-semibold text-2xl ml-3 mt-2 mb-1">Besked</p>
+                            <input type="text" name="besked" height="128" placeholder="Jeg mangler en ny hjemmeside, kan i hjælpe med det?" class="block border-none outline-none focus:ring-0 w-full placeholder:italic placeholder:text-darkblue-200 text-darkblue-500 bg-transparent"></input>
+                        </label>
+                        <div class="flex justify-end">
+                            <Button>Send besked</Button>
+                        </div>
+                    </section>
                     
-                </section>
-                <div>
-                    <Button></Button>
                 </div>
-            </div>
-        </form>
-    </article>
+            </form>
+        </article>
+    </div>
 </section>
-
-<style>
-    .form-wrapper {
-        margin : 10px;
-    }
-    .full-input {
-        display: inline-block;
-        padding: 3px;
-        border: 2px solid blue;
-    }
-    input {
-        outline: none;
-        border: none;
-        display:block;
-        line-height: 1.2em;
-        font-size: 14pt;
-    }
-    label {
-        display: block;
-        font-size: 12px;
-        color: blue;
-    }
-</style>
