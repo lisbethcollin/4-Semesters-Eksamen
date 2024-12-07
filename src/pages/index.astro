@@ -2,15 +2,28 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 import Kontakt from '../components/Kontakt.astro';
+import Number from '../components/Number.astro';
 import CardService from '../components/CardService.astro';
-
+import { Image } from 'astro:assets';
+import besa from '../assets/images/besa.png';
+import partner from '../assets/images/googlepartner.png';
+import meta from '../assets/images/meta.png';
+import wordpress from '../assets/images/wordpress.png';
+import mailchimp from '../assets/images/mailchimp.png';
+import microsoftazure from '../assets/images/microsoftazure.png';
+import openai from '../assets/images/openai.png';
+import bing from '../assets/images/bing.png';
+import cloud from '../assets/images/googlecloud.png';
+import adobe from '../assets/images/adobe.png';
+import aws from '../assets/images/aws.png';
+import leads from '../assets/images/googleads.png';
 ---
 <MainLayout title="Titel">
 <!-------------------------------- HERO SEKTION ---------------------->
 
 <article class="bg-cover bg-center bg-[url('/src/assets/images/forsideweb.png')] mt-24">
 
-<section class="grid grid-cols-1 gap-16 p-20 ">
+<section class="grid grid-cols-1 gap-16 p-24 ">
 	<h1 class=" pt-24 text-6xl font-albert font-black text-darkblue-500">DIGITAL <span class="font-light" >MARKETING </span> <br>
 OG WEB BUREAU</h1>
 	<p class="text-base max-w-md font-outfit text-darkblue-500" >Full-service digitalt marketingbureau med høje ambitioner for vores kunder og målrettede resultater der kan hjælpe dig til det næste niveau</p>
@@ -30,10 +43,83 @@ OG WEB BUREAU</h1>
 	</article>
 	<!-------------------------------- HERO SEKTION SLUT ---------------------->
 
+		<!-------------------------------- OM BESA SEKTION ---------------------->
+
+		<article class="p-24 grid gap-16">
+
+<h2 class="text-5xl text-darkblue-500 uppercase font-bold">Vi drømmer stort <br> og arbejder hårdt </h2>
+
+<section class="grid grid-cols-3 gap-10 ">
+<Number 
+tal="+200"
+taltitle="KUNDER"
+talbeskrivelse="Har samarbejdet med os gennem årene, fordelt på forskellige brancher og projekter"
+/>
+
+<Number 
+tal="+50"
+taltitle="MIO. DKK"
+talbeskrivelse="Har vi samlet genereret for vores kunder gennem optimerede marketindstrategier"
+/>
+
+<Number 
+tal="+250"
+taltitle="WEBSITES"
+talbeskrivelse="Har vi  designet og hjulpet vores kunder med at vækste igennem siden 2021"
+/>
+</section>
+
+<section class="grid grid-cols-2 gap-9">
+	<div class="flex flex-col justify-between"> 
+	<p font-outfit text-darkblue-500 text-base >Besa Digital er et fullservice digitalt marketing bureau med høje  ambitioner for sine kunder, målrettede resultater og en stærk værdibaseret vision om at  levere kompromisløs kvalitet med afsæt i ærlighed. Vi er, med andre ord, ikke et marketingbureau ligesom alle andre. Hos Besa Digital er et løfte en garanti, og vi lover kun det, vi kan holde.</p>
+	<p class=" font-outfit font-semibold text-darkblue-500 text-xl ">Som din digitale forretningspartner er du derfor garanteret ren snak for pengene, og at vi holder vores aftaler, og indfrier de løfter, vi giver.</p>
+	<div class=""><Button variant="secondary" >Kontakt os</Button></div> 
+	</div>
+	<Image src={besa} alt="" class="w-full"/>
+</section>
+
+		</article>
+
+			<!-------------------------------- OM BESA SEKTION SLUT ---------------------->
+			<!-------------------------------- SERVICES SEKTION  ---------------------->
+
 	<section id="service">
 		<h2>Services vi <br> kan tilbyde dig</h2>
 		
+		<div class=" overflow-hidden py-12 ">
+			<div class="flex logos-slide whitespace-nowrap ">
+<Image src={partner} alt="" class="h-10 mx-14"/>
+<Image src={meta} alt="" class="h-10 mx-14"/>
+<Image src={wordpress} alt="" class="h-10 mx-14"/>
+<Image src={mailchimp} alt="" class="h-10 mx-14"/>
+<Image src={microsoftazure} alt="" class="h-10 mx-14"/>
+<Image src={openai} alt="" class="h-10 mx-14"/>
+<Image src={bing} alt="" class="h-10 mx-14"/>
+<Image src={cloud} alt="" class="h-10 mx-14"/>
+<Image src={adobe} alt="" class="h-10 mx-14"/>
+<Image src={aws} alt="" class="h-10 mx-14"/>
+<Image src={leads} alt="" class="h-10 mx-14"/>
+			</div>
+		</div>
 	</section>
+
+	<!-------------------------------- SERVICES SEKTION SLUT ---------------------->
+		<!-------------------------------- SAMARBEJDSPARTNERE SEKTION  ---------------------->
+
+		<article>
+<h3>Vi samarbejder med</h3>
+
+<section>
+
+
+
+
+</section>
+
+		</article>
+
+			<!-------------------------------- SAMARBEJDSPARTNERE SEKTION  ---------------------->
+
 	<Kontakt 
 		kontaktbeskrivelse="Frisk på at høre hvad vi kan gøre for dig? Kontakt os i dag, så vi kan skabe resultater sammen."
 		kontaktimg="/path/to/image.jpg"
@@ -41,3 +127,22 @@ OG WEB BUREAU</h1>
 		personnavn="Mette Line Tarp Jørgensen"
 		personbeskrivelse="Webudvikler, Designer & Projektleder"/>
 </MainLayout>
+
+<style>
+
+@keyframes slide {
+
+	from{
+		transform: translateX(0);
+
+	}
+	to{
+		transform: translateX(-100%);
+	}
+}
+
+.logos-slide{
+	animation: 15s slide infinite linear;
+}
+
+</style>
