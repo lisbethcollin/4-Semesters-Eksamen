@@ -19,9 +19,11 @@ import aws from '../assets/images/aws.png';
 import leads from '../assets/images/googleads.png';
 ---
 <MainLayout title="Titel">
+
+	
 <!-------------------------------- HERO SEKTION ---------------------->
 
-<article class="bg-cover bg-center bg-[url('/src/assets/images/forsideweb.png')] mt-24">
+<article class="bg-cover bg-[url('/src/assets/images/forsideweb.png')] mt-24">
 
 <section class="grid grid-cols-1 gap-16 p-24 ">
 	<h1 class=" pt-24 text-6xl font-albert font-black text-darkblue-500">DIGITAL <span class="font-light" >MARKETING </span> <br>
@@ -42,6 +44,11 @@ OG WEB BUREAU</h1>
 		
 	</article>
 	<!-------------------------------- HERO SEKTION SLUT ---------------------->
+
+
+
+
+
 
 		<!-------------------------------- OM BESA SEKTION ---------------------->
 
@@ -81,36 +88,52 @@ talbeskrivelse="Har vi  designet og hjulpet vores kunder med at vækste igennem 
 		</article>
 
 			<!-------------------------------- OM BESA SEKTION SLUT ---------------------->
+
+
+
+
+
 			<!-------------------------------- SERVICES SEKTION  ---------------------->
 
-	<section id="service">
-		<h2>Services vi <br> kan tilbyde dig</h2>
+	<section id="service" class="px-24">
+		<h2 class="text-5xl text-darkblue-500 uppercase font-bold">Services vi <br> kan tilbyde dig</h2>
 		
-		<div class=" overflow-hidden py-12 ">
-			<div class="flex logos-slide whitespace-nowrap ">
-<Image src={partner} alt="" class="h-10 mx-14"/>
-<Image src={meta} alt="" class="h-10 mx-14"/>
-<Image src={wordpress} alt="" class="h-10 mx-14"/>
-<Image src={mailchimp} alt="" class="h-10 mx-14"/>
-<Image src={microsoftazure} alt="" class="h-10 mx-14"/>
-<Image src={openai} alt="" class="h-10 mx-14"/>
-<Image src={bing} alt="" class="h-10 mx-14"/>
-<Image src={cloud} alt="" class="h-10 mx-14"/>
-<Image src={adobe} alt="" class="h-10 mx-14"/>
-<Image src={aws} alt="" class="h-10 mx-14"/>
-<Image src={leads} alt="" class="h-10 mx-14"/>
-			</div>
+		<div>
+			<CardService/>
+	
 		</div>
+		
 	</section>
 
 	<!-------------------------------- SERVICES SEKTION SLUT ---------------------->
+
+
+
+
+
 		<!-------------------------------- SAMARBEJDSPARTNERE SEKTION  ---------------------->
 
-		<article>
-<h3>Vi samarbejder med</h3>
+	<article class="bg-cover bg-center bg-[url('/src/assets/images/section.png')] ">
+
+<h3 class="text-3xl text-darkblue-500 font-bold px-24 pt-24 pb-10" >Vi samarbejder med</h3>
 
 <section>
 
+<div class=" overflow-hidden py-12 pb-24">
+			<div class="flex logos-slide whitespace-nowrap ">
+<Image src={partner} alt="" class="h-14 mx-14"/>
+<Image src={meta} alt="" class="h-14 mx-14"/>
+<Image src={wordpress} alt="" class="h-14 mx-14"/>
+<Image src={mailchimp} alt="" class="h-14 mx-14"/>
+<Image src={microsoftazure} alt="" class="h-14 mx-14"/>
+<Image src={openai} alt="" class="h-14 mx-14"/>
+<Image src={bing} alt="" class="h-14 mx-14"/>
+<Image src={cloud} alt="" class="h-14 mx-14"/>
+<Image src={adobe} alt="" class="h-14 mx-14"/>
+<Image src={aws} alt="" class="h-14 mx-14"/>
+<Image src={leads} alt="" class="h-14 mx-14"/>
+			</div>
+		</div>
 
 
 
@@ -118,7 +141,95 @@ talbeskrivelse="Har vi  designet og hjulpet vores kunder med at vækste igennem 
 
 		</article>
 
-			<!-------------------------------- SAMARBEJDSPARTNERE SEKTION  ---------------------->
+			<!-------------------------------- SAMARBEJDSPARTNERE SEKTION SLUT  ---------------------->
+
+
+
+
+
+
+
+				<!-------------------------------- CASE SEKTION  ---------------------->
+
+<article class="grid grid-cols-2 px-24">
+
+<section>
+	
+<h2 class="text-5xl text-darkblue-500 uppercase font-bold">Forbedret SEO og <br> ny hjemmeside <br> skaber vækst </h2>
+<p>I vores samarbejde med Diætisten fra Herlufsholm har vi med en målrettet  hjulpet hende med at opnå bedre synlighed i søgemaskinerne og sørget for en stigning i organisk trafik og en fuldt booket kalender. Derudover har vi designet en ny, brugervenlig hjemmeside, der viser hendes professionelle brand frem og gør det nemt at kommunikere hendes budskaber klart.</p>
+<div class=""><Button variant="secondary" >Kontakt os</Button></div> 
+
+</section>
+
+<section>
+
+	<a href="">Case: Diætisten fra Herlufsholm</a>
+</section>
+
+</article>
+
+
+				<!-------------------------------- CASE SEKTION SLUT ---------------------->
+
+
+
+
+
+				<!--------------------------------  QUOTE SEKTION ---------------------->
+
+
+				<article>
+<h2 class="text-5xl text-darkblue-500 uppercase font-bold px-24">Det siger vores<br> kunder </h2>
+
+<section class="grid grid-cols-3 px-24">
+<div>
+	<p>Jeg har haft en fantastiske oplevede med BESA Digital, som har hjulpet mig godt videre.  De tager en meget seriøs tilgang til min markedsføring og altid er til rådighed. Mine varmeste anbefalinger herfra.</p>
+
+		<div class="grid grid-cols-2">
+
+		<img src="" alt="">
+			<div>
+				<p>Katrine <br> Wennerwald</p>
+				<p>Ejer af Bindevævs- <br> Akademiet</p>
+			</div>
+		</div>
+</div>
+
+
+
+<div>
+		<p>Som en stor international virksomhed er det vigtigt for os at have en  partner, der forstår vores behov, og det gør Besa til fulde. Vi kan  klart anbefale dem til andre, der søger en stærk samarbejdspartner inden for marketing eller strategi. </p>
+
+		<div class="grid grid-cols-2">
+			<img src="" alt="">
+				<div>
+					<p>Rasmus <br> Theilade</p>
+					<p>Partner, grafisk <br> designer hos OBI <br> Media</p>
+				</div>
+		</div>
+</div>
+
+<div>
+		<p>De har leveret topklasse arbejde inden for både Google Ads, SEO og ikke  mindst vores nye hjemmeside, som vi er utrolig glade for. Resultaterne  taler for sig selv, og vi har oplevet en markant forbedring på alle  fronter.</p>
+		<div class="grid grid-cols-2">
+			<img src="" alt="">
+			<div >
+				<p>Alexander <br> Kobberø</p>
+				<p>Head of Ecom hos <br> BibsWorld.com</p>
+			</div>
+
+		</div>
+
+</div>
+
+</section>
+</article>
+
+				<!--------------------------------  QUOTE SEKTION SLUT ---------------------->
+
+
+
+				<!--------------------------------  KONTAKT SEKTION ---------------------->
 
 	<Kontakt 
 		kontaktbeskrivelse="Frisk på at høre hvad vi kan gøre for dig? Kontakt os i dag, så vi kan skabe resultater sammen."
@@ -126,6 +237,8 @@ talbeskrivelse="Har vi  designet og hjulpet vores kunder med at vækste igennem 
 		kontaktalt="Closeup af Mette Line"
 		personnavn="Mette Line Tarp Jørgensen"
 		personbeskrivelse="Webudvikler, Designer & Projektleder"/>
+
+		<!--------------------------------  KONTAKT SEKTION SLUT---------------------->
 </MainLayout>
 
 <style>
