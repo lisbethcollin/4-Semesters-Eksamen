@@ -1,9 +1,8 @@
 ---
 const { serviceurl, servicetitle, servicenummer, servicebeskrivelse, servicepunkt } = Astro.props;
 ---
-
 <a href={serviceurl}>
-    <section>
+    <article>
         <p>{servicenummer}</p>
         <h4>{servicetitle}</h4>
         <p>{servicebeskrivelse}</p>
@@ -11,5 +10,5 @@ const { serviceurl, servicetitle, servicenummer, servicebeskrivelse, servicepunk
         <ul>
             <li>{servicepunkt}</li>
         </ul>
-    </section>
+    </article>
 </a>
