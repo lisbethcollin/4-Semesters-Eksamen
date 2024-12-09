@@ -1,0 +1,35 @@
+---
+const { personrimg, personralt, personrightnavn, personrightbeskrivelse, personrighttitel } = Astro.props;
+
+---
+
+<article class=" grid md:grid-cols-2 gap-6 md:gap-10 " >
+
+<section class="text-darkblue-500 ">
+
+<h4 class="font-albert text-4xl md:text-5xl font-bold">{personrightnavn}</h4>
+<p class="font-albert text-2xl md:text-3xl font-light" >{personrighttitel}</p>
+<hr class="border-blue-500">
+<p class="font-outfit text-base" >{personrightbeskrivelse}</p>
+
+
+
+
+  
+<ul class="grid grid-cols-2 list-disc font-outfit">
+    <template x-for="punkt in kompetencer" :key="kompetencer">
+        <li x-text="kompetencer"></li>
+    </template>
+ 
+</ul>
+
+
+
+
+</section>
+
+<div class="order-first md:order-last">
+ <img src={personrimg} alt={personralt}>
+</div>
+
+</article>
