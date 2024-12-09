@@ -1,24 +1,32 @@
 ---
 import Button from '../components/Button.astro';
-
 const { kontaktimg, kontaktalt, kontaktbeskrivelse, personnavn, personbeskrivelse } = Astro.props;
 ---
 
 <section class="max-w-7xl m-auto">
-    <h3 class="font-albert font-bold text-4xl">Gør dine ambitioner <br> til virkelighed</h3>
+    <div class="grid grid-cols-1 md:grid-cols-5">
+    <div class="col-span-1 md:col-span-2">
+    <h3 class="font-albert font-bold text-4xl mb-6">Gør dine ambitioner <br> til virkelighed</h3>
+    <p class="font-outfit text-xl pb-6">{kontaktbeskrivelse}</p>
+    </div>
+    <div class="col-span-1  md:col-span-3">
+        </div>
+
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-10 pt-4">
     
-    <div class="grid grid-cols-5 gap-10 pt-4">
-        <article class="col-span-2">
-            <p class="font-outfit text-xl pb-14">{kontaktbeskrivelse}</p>
-            <img src={kontaktimg} alt={kontaktalt}>
-            <p class="font-outfit font-semibold pt-3">{personnavn}</p>
+     
+            <div class="col-span-1 md:col-span-2">
+   <img src={kontaktimg} alt={kontaktalt}>
+            <p class="font-outfit font-semibold pt-6">{personnavn}</p>
             <p class="font-outfit pt-2">{personbeskrivelse}</p>
-        </article>
-        <article class="col-span-3" >
+            </div>
+
+        <article class="col-span-1  md:col-span-3" >
             <form>
                 <div x-data="{ selectedInput: null }">
-                    <section class="m-10">
-                        <article class="grid grid-cols-2 gap-5">
+                    <section class="">
+                        <article class="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-5">
                             <label for="navn"
                                 x-on:click="selectedInput = 1"
                                 x-bind:class="selectedInput === 1 ? 'border-b-2 border-b-darkblue-600' : 'hover:border-b-2 hover:border-b-blue-500'"
@@ -56,5 +64,7 @@ const { kontaktimg, kontaktalt, kontaktbeskrivelse, personnavn, personbeskrivels
                 </div>
             </form>
         </article>
+
+ 
     </div>
 </section>
