@@ -9,6 +9,8 @@ module.exports = {
         forsideweb: "url('/src/assets/images/forsideweb.png')",
         forsidemobil: "url('/src/assets/images/forsidemobil.png')",
         banner: "url('/src/assets/images/section.png')",
+        heroweb: "url('/src/assets/images/heroweb.png')",
+        heromobil: "url('/src/assets/images/heromobil.png')",
       },
 
       fontFamily: {
