@@ -17,19 +17,25 @@ import cloud from '../assets/images/googlecloud.png';
 import adobe from '../assets/images/adobe.png';
 import aws from '../assets/images/aws.png';
 import leads from '../assets/images/googleads.png';
+import herlufholm from '../assets/images/mockup-herlufholm.png';
+import katrine from '../assets/images/katrine.png';
+import rasmus from '../assets/images/rasmus.png';
+import alexander from '../assets/images/alexander.png';
+
 ---
 <MainLayout title="Titel">
 
-	
+
 <!-------------------------------- HERO SEKTION ---------------------->
 
-<article class="bg-cover bg-[url('/src/assets/images/forsideweb.png')] mt-24">
+<article class="hidden md:block bg-cover bg-[url('/src/assets/images/forsideweb.png')] mt-24 mb-32 md:mb-32">
 
-<section class="grid grid-cols-1 gap-16 p-24 ">
-	<h1 class=" pt-24 text-6xl font-albert font-black text-darkblue-500">DIGITAL <span class="font-light" >MARKETING </span> <br>
+<section class="grid md:grid-cols-1 md:gap-16 md:p-24">
+	<h1 class=" pt-24 md:text-6xl font-albert font-black text-darkblue-500">DIGITAL <span class="font-light" >MARKETING </span> <br>
 OG WEB BUREAU</h1>
-	<p class="text-base max-w-md font-outfit text-darkblue-500" >Full-service digitalt marketingbureau med høje ambitioner for vores kunder og målrettede resultater der kan hjælpe dig til det næste niveau</p>
+	<p class="text-base max-w-md font-outfit text-darkblue-500 hidden md:block" >Full-service digitalt marketingbureau med høje ambitioner for vores kunder og målrettede resultater der kan hjælpe dig til det næste niveau</p>
 	</section>
+
 
 
 <section class="py-24">
@@ -41,8 +47,35 @@ OG WEB BUREAU</h1>
 <li class="relative mx-8 text-darkblue-500 before:content-['/'] before:absolute before:-left-4 before:text-blue-500 "><a href="/../services.html">Strategi</a></li>
 	</ul>
 </section>
-		
+
 	</article>
+
+
+<article class="block md:hidden bg-cover bg-[url('/src/assets/images/forsidemobil.png')] mt-24">
+	<section class="grid grid-cols-1 gap-16 p-6 md:hidden">
+	<h1 class="pt-24 mb-12 text-5xl font-albert font-bold text-darkblue-500">DIGITAL <br> <span class="font-light" >MARKETING </span> <br>
+OG WEB <br> BUREAU</h1>
+	<p class="text-base max-w-md font-outfit text-darkblue-500 hidden md:block" >Full-service digitalt marketingbureau med høje ambitioner for vores kunder og målrettede resultater der kan hjælpe dig til det næste niveau</p>
+	</section>
+
+
+<section class="flex flex-wrap gap-9 pt-48 pb-48 px-6 font-albert text-xl">
+
+<a class="text-darkblue-500" href="/../services.html">SEO</a>
+<p class="text-blue-500">/</p>
+<a class="text-darkblue-500" href="/../services.html">Google Ads</a>
+<p class="text-blue-500">/</p>
+
+<a class="text-darkblue-500" href="/../services.html">Webdesign</a>
+<p class="text-blue-500">/</p>
+<a class="text-darkblue-500" href="/../services.html">SoMe</a>
+<p class="text-blue-500">/</p>
+<a class="text-darkblue-500" href="/../services.html">Strategi</a>
+
+</section>
+
+</article>
+
 	<!-------------------------------- HERO SEKTION SLUT ---------------------->
 
 
@@ -52,37 +85,43 @@ OG WEB BUREAU</h1>
 
 		<!-------------------------------- OM BESA SEKTION ---------------------->
 
-		<article class="p-24 grid gap-16">
+		<article class="px-6 md:px-24 grid gap-16 mb-32 md:mb-56">
 
-<h2 class="text-5xl text-darkblue-500 uppercase font-bold">Vi drømmer stort <br> og arbejder hårdt </h2>
+<h2 class="text-4xl md:text-5xl text-darkblue-500 uppercase font-albert font-bold">Vi drømmer stort <br> - og arbejder hårdt </h2>
 
-<section class="grid grid-cols-3 gap-10 ">
+<section class="grid max-w-10 gap-20 md:grid md:grid-cols-3 md:gap-10 ">
+
+<div class="mr-24 max-w-10 md:m-0">
 <Number 
 tal="+200"
 taltitle="KUNDER"
 talbeskrivelse="Har samarbejdet med os gennem årene, fordelt på forskellige brancher og projekter"
 />
+</div>
 
-<Number 
+<div class="text-righ max-w-10 md:text-left ml-24 md:m-0">
+<Number  
 tal="+50"
 taltitle="MIO. DKK"
 talbeskrivelse="Har vi samlet genereret for vores kunder gennem optimerede marketindstrategier"
 />
-
+</div>
+<div class="mr-24 max-w-10 md:m-0">
 <Number 
 tal="+250"
 taltitle="WEBSITES"
 talbeskrivelse="Har vi  designet og hjulpet vores kunder med at vækste igennem siden 2021"
 />
+</div>
 </section>
 
-<section class="grid grid-cols-2 gap-9">
-	<div class="flex flex-col justify-between"> 
-	<p font-outfit text-darkblue-500 text-base >Besa Digital er et fullservice digitalt marketing bureau med høje  ambitioner for sine kunder, målrettede resultater og en stærk værdibaseret vision om at  levere kompromisløs kvalitet med afsæt i ærlighed. Vi er, med andre ord, ikke et marketingbureau ligesom alle andre. Hos Besa Digital er et løfte en garanti, og vi lover kun det, vi kan holde.</p>
+<section class="grid gap-8 md:grid-cols-2 md:gap-9">
+	<div class="flex flex-col gap-8 justify-between"> 
+	<p class=" text-darkblue-500 text-base font-outfit" >Besa Digital er et fullservice digitalt marketing bureau med høje  ambitioner for sine kunder, målrettede resultater og en stærk værdibaseret vision om at  levere kompromisløs kvalitet med afsæt i ærlighed. Vi er, med andre ord, ikke et marketingbureau ligesom alle andre. Hos Besa Digital er et løfte en garanti, og vi lover kun det, vi kan holde.</p>
 	<p class=" font-outfit font-semibold text-darkblue-500 text-xl ">Som din digitale forretningspartner er du derfor garanteret ren snak for pengene, og at vi holder vores aftaler, og indfrier de løfter, vi giver.</p>
-	<div class=""><Button variant="secondary" >Kontakt os</Button></div> 
+	<div class="grid place-content-center md:place-content-start"><Button variant="secondary" >Lær os at kende</Button></div> 
 	</div>
-	<Image src={besa} alt="" class="w-full"/>
+	<Image src={besa} alt="" class="w-full order-first md:order-last"/>
 </section>
 
 		</article>
@@ -95,7 +134,7 @@ talbeskrivelse="Har vi  designet og hjulpet vores kunder med at vækste igennem 
 
 			<!-------------------------------- SERVICES SEKTION  ---------------------->
 
-	<section id="service" class="px-24">
+	<section id="service" class="px-6 md:px-24 mb-32 md:mb-32">
 		<h2 class="text-5xl text-darkblue-500 uppercase font-bold">Services vi <br> kan tilbyde dig</h2>
 		
 		<div>
@@ -113,7 +152,7 @@ talbeskrivelse="Har vi  designet og hjulpet vores kunder med at vækste igennem 
 
 		<!-------------------------------- SAMARBEJDSPARTNERE SEKTION  ---------------------->
 
-	<article class="bg-cover bg-center bg-[url('/src/assets/images/section.png')] ">
+	<article class="bg-cover bg-center bg-[url('/src/assets/images/section.png')] mb-40 md:mb-32">
 
 <h3 class="text-3xl text-darkblue-500 font-bold px-24 pt-24 pb-10" >Vi samarbejder med</h3>
 
@@ -151,19 +190,19 @@ talbeskrivelse="Har vi  designet og hjulpet vores kunder med at vækste igennem 
 
 				<!-------------------------------- CASE SEKTION  ---------------------->
 
-<article class="grid grid-cols-2 px-24">
+<article class="grid gap-20 px-6 md:grid-cols-2 md:px-24 mb-40 md:mb-32">
 
-<section>
-	
-<h2 class="text-5xl text-darkblue-500 uppercase font-bold">Forbedret SEO og <br> ny hjemmeside <br> skaber vækst </h2>
+<section class="grid gap-10 text-darkblue-500 ">
+	<h2 class="hidden md:block text-5xl  uppercase font-bold">Forbedret SEO og <br> ny hjemmeside <br> skaber vækst </h2>
+<h2 class="md:hidden text-4xl  uppercase font-bold">Forbedret SEO og ny hjemmeside <br> skaber vækst </h2>
 <p>I vores samarbejde med Diætisten fra Herlufsholm har vi med en målrettet  hjulpet hende med at opnå bedre synlighed i søgemaskinerne og sørget for en stigning i organisk trafik og en fuldt booket kalender. Derudover har vi designet en ny, brugervenlig hjemmeside, der viser hendes professionelle brand frem og gør det nemt at kommunikere hendes budskaber klart.</p>
-<div class=""><Button variant="secondary" >Kontakt os</Button></div> 
+<div class="grid place-content-center md:place-content-start"><Button variant="secondary" >Se casen</Button></div> 
 
 </section>
 
-<section>
-
-	<a href="">Case: Diætisten fra Herlufsholm</a>
+<section class="order-first md:order-last">
+<Image src={herlufholm} alt="" class="w-full"/>
+	<a class="font-outfit text-darkblue-500 " href="">Case: Diætisten fra Herlufsholm</a>
 </section>
 
 </article>
@@ -178,44 +217,44 @@ talbeskrivelse="Har vi  designet og hjulpet vores kunder med at vækste igennem 
 				<!--------------------------------  QUOTE SEKTION ---------------------->
 
 
-				<article>
-<h2 class="text-5xl text-darkblue-500 uppercase font-bold px-24">Det siger vores<br> kunder </h2>
+				<article class=" mb-32 md:mb-32">
+<h2 class="text-4xl md:text-5xl text-darkblue-500 uppercase font-bold pb-10 px-6 md:px-24">Det siger vores<br> kunder </h2>
 
-<section class="grid grid-cols-3 px-24">
-<div>
-	<p>Jeg har haft en fantastiske oplevede med BESA Digital, som har hjulpet mig godt videre.  De tager en meget seriøs tilgang til min markedsføring og altid er til rådighed. Mine varmeste anbefalinger herfra.</p>
+<section class="grid md:grid-cols-3 gap-16 md:gap-6 px-10 md:px-24 font-outfit text-darkblue-500 ">
+<div  class="flex flex-col">
+	<p class=" ">Jeg har haft en fantastiske oplevede med BESA Digital, som har hjulpet mig godt videre.  De tager en meget seriøs tilgang til min markedsføring og altid er til rådighed. Mine varmeste anbefalinger herfra.</p>
 
-		<div class="grid grid-cols-2">
+		<div class="grid grid-cols-2 gap-6">
 
-		<img src="" alt="">
+			<Image src={katrine} alt="" class="max-w-10 "/>
 			<div>
-				<p>Katrine <br> Wennerwald</p>
-				<p>Ejer af Bindevævs- <br> Akademiet</p>
+				<p class="font-semibold">Katrine <br> Wennerwald</p>
+				<p class="font-light">Ejer af Bindevævs- <br> Akademiet</p>
 			</div>
 		</div>
 </div>
 
 
 
-<div>
-		<p>Som en stor international virksomhed er det vigtigt for os at have en  partner, der forstår vores behov, og det gør Besa til fulde. Vi kan  klart anbefale dem til andre, der søger en stærk samarbejdspartner inden for marketing eller strategi. </p>
+<div class="flex flex-col">
+		<p class="">Som en stor international virksomhed er det vigtigt for os at have en  partner, der forstår vores behov, og det gør Besa til fulde. Vi kan  klart anbefale dem til andre, der søger en stærk samarbejdspartner inden for marketing eller strategi. </p>
 
-		<div class="grid grid-cols-2">
-			<img src="" alt="">
+		<div class="grid grid-cols-2 gap-6">
+		<Image src={rasmus} alt="" class="max-w-10"/>
 				<div>
-					<p>Rasmus <br> Theilade</p>
-					<p>Partner, grafisk <br> designer hos OBI <br> Media</p>
+					<p class="font-semibold">Rasmus <br> Theilade</p>
+					<p class="font-light">Partner, grafisk <br> designer hos OBI <br> Media</p>
 				</div>
 		</div>
 </div>
 
-<div>
-		<p>De har leveret topklasse arbejde inden for både Google Ads, SEO og ikke  mindst vores nye hjemmeside, som vi er utrolig glade for. Resultaterne  taler for sig selv, og vi har oplevet en markant forbedring på alle  fronter.</p>
-		<div class="grid grid-cols-2">
-			<img src="" alt="">
+<div class="flex flex-col">
+		<p class="">De har leveret topklasse arbejde inden for både Google Ads, SEO og ikke  mindst vores nye hjemmeside, som vi er utrolig glade for. Resultaterne  taler for sig selv, og vi har oplevet en markant forbedring på alle  fronter.</p>
+		<div class="grid grid-cols-2 gap-6">
+			<Image src={alexander} alt="" class="max-w-10"/>
 			<div >
-				<p>Alexander <br> Kobberø</p>
-				<p>Head of Ecom hos <br> BibsWorld.com</p>
+				<p class="font-semibold">Alexander <br> Kobberø</p>
+				<p class="font-light">Head of Ecom hos <br> BibsWorld.com</p>
 			</div>
 
 		</div>
@@ -230,14 +269,14 @@ talbeskrivelse="Har vi  designet og hjulpet vores kunder med at vækste igennem 
 
 
 				<!--------------------------------  KONTAKT SEKTION ---------------------->
-
+<article class="mb-32 md:px-24">
 	<Kontakt 
 		kontaktbeskrivelse="Frisk på at høre hvad vi kan gøre for dig? Kontakt os i dag, så vi kan skabe resultater sammen."
 		kontaktimg="/path/to/image.jpg"
 		kontaktalt="Closeup af Mette Line"
 		personnavn="Mette Line Tarp Jørgensen"
 		personbeskrivelse="Webudvikler, Designer & Projektleder"/>
-
+</article>
 		<!--------------------------------  KONTAKT SEKTION SLUT---------------------->
 </MainLayout>
 
