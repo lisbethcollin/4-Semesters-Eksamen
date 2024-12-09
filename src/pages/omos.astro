@@ -1,0 +1,87 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from '../components/Button.astro';
+import Kontakt from '../components/Kontakt.astro';
+import { Image } from 'astro:assets';
+import besa from '../assets/images/besa.png';
+import Number from '../components/Number.astro';
+
+---
+<MainLayout title="Titel">
+
+    <!-------------------------------- HERO SEKTION ---------------------->
+
+   
+
+<article class="hidden md:block bg-cover bg-[url('/src/assets/images/heroweb.png')] mt-10 mb-32 md:mb-32">
+
+<section class="grid md:grid-cols-1 md:gap-16 md:p-24 md:mb-14">
+	<h1 class=" pt-24 md:text-5xl font-albert font-black text-darkblue-500 uppercase">Mød dit <br>dedikerede team </h1>
+
+	</section>
+
+<section class="grid md:grid-cols-2 gap-10 text-darkblue-500 text-base font-outfit md:p-24 ">
+
+<div class=" text-darkblue-500 text-base font-outfit">
+    <p class="">“Besa-digital” er mere end et navn – det er vores kerneværdi. Inspireret af det albanske udtryk “Besa”, som betyder “at holde ord”, bygger vi vores arbejde på tillid, troværdighed og aftaler, du kan regne med. Vi holder vores løfter og er altid transparente og ærlige. <br> <br>Vores mission er at levere kvalitetsløsninger til virksomheder, der deler vores værdisæt. Vi tager kun projekter ind, vi tror på, og sikrer derved løsninger af højeste kvalitet. Det er vores løfte som din digitale samarbejdspartner.</p>
+    <p></p>
+</div>
+	<Image src={besa} alt="" class="w-full order-first md:order-last"/>
+</section>
+
+	</article>
+
+<!-------------------- mobil ---------------------->
+
+<article class="block md:hidden bg-cover bg-[url('/src/assets/images/heromobil.png')] mt-24 mb-24">
+	<section class="grid grid-cols-1 gap-16 p-6 md:hidden">
+	<h1 class="pt-24 mb-12 text-4xl font-albert font-bold text-darkblue-500 uppercase">Mød dit <br>dedikerede team </h1>
+
+	</section>
+
+<section class="px-6 flex flex-col md:flex-row">
+
+	<div class=" text-darkblue-500 text-base font-outfit py-8">
+    	<p class="">“Besa-digital” er mere end et navn – det er vores kerneværdi. Inspireret af det albanske udtryk “Besa”, som betyder “at holde ord”, bygger vi vores arbejde på tillid, troværdighed og aftaler, du kan regne med. Vi holder vores løfter og er altid transparente og ærlige.</p>
+    	<p>Vores mission er at levere kvalitetsløsninger til virksomheder, der deler vores værdisæt. Vi tager kun projekter ind, vi tror på, og sikrer derved løsninger af højeste kvalitet. Det er vores løfte som din digitale samarbejdspartner.</p>
+	</div>
+		<Image src={besa} alt="" class="w-full order-first md:order-last"/>
+</section>
+
+</article>
+
+<!-------------------------------- HERO SEKTION SLUT ---------------------->
+
+<!-------------------------------- TAL SEKTION  ---------------------->
+
+<article class="px-6 md:px-24 grid gap-16 mb-32 md:mb-56">
+	<section class="grid max-w-10 gap-20 md:grid md:grid-cols-3 md:gap-10 ">
+
+	<div class="mr-24 max-w-10 md:m-0">
+	<Number 
+	tal="+200"
+	taltitle="KUNDER"
+	talbeskrivelse="Har samarbejdet med os gennem årene, fordelt på forskellige brancher og projekter"
+	/>
+	</div>
+
+	<div class="text-righ max-w-10 md:text-left ml-24 md:m-0">
+	<Number  
+	tal="+50"
+	taltitle="MIO. DKK"
+	talbeskrivelse="Har vi samlet genereret for vores kunder gennem optimerede marketindstrategier"
+	/>
+	</div>
+	<div class="mr-24 max-w-10 md:m-0">
+	<Number 
+	tal="+250"
+	taltitle="WEBSITES"
+	talbeskrivelse="Har vi  designet og hjulpet vores kunder med at vækste igennem siden 2021"
+	/>
+	</div>
+	</section>
+
+</article>
+<!-------------------------------- TAL SEKTION SLUT ---------------------->
+
+</MainLayout>
