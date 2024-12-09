@@ -1,14 +1,13 @@
 [{
-        "id": "c2",
-        "coverimg": "",
-        "coveralt": "",
-        "caseurl": "",
-        "casetitle": "",
-        "casepunkt": [
-            "",
-            "",
-            ""
-        ]
-    }
-
-]
+    "id": "1",
+    "coverimg": "",
+    "coveralt": "",
+    "casetitle": "Diætisten i Herlufsholm",
+    "casepunkt": [
+        "Digital marketing",
+        "Hjemmeside",
+        "Web Development"
+    ],
+    "slug": "herlufsholm",
+    "markdownFile": "/pages/cases/herlufsholm.md"
+}]
