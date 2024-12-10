@@ -1,5 +1,5 @@
 ---
-const { personrimg, personralt, personrightnavn, personrightbeskrivelse, personrighttitel } = Astro.props;
+const { personrimg, personralt, personrightnavn, personrightbeskrivelse, personrighttitel, kompetencer = [] } = Astro.props;
 
 ---
 
@@ -15,12 +15,10 @@ const { personrimg, personralt, personrightnavn, personrightbeskrivelse, personr
 
 
 
-  
-<ul class="grid grid-cols-2 list-disc font-outfit">
-    <template x-for="punkt in kompetencer" :key="kompetencer">
-        <li x-text="kompetencer"></li>
-    </template>
- 
+<ul>
+    {kompetencer.map(kompetence => (
+        <li>{kompetence}</li>
+    ))}
 </ul>
 
 
