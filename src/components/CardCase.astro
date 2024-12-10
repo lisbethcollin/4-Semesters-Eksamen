@@ -1,22 +1,11 @@
 
 ---
-import Cases from "../pages/cases.astro";
 
-const kunde = await Astro.glob('../pages/cases/*.md');
-
-const sorteredekunde = kunde.sort((a, b) => {
-    if (a.frontmatter.date < b.frontmatter.date) return -1;
-    if (a.frontmatter.date > b.frontmatter.date) return 1;
-    return 0;
-});
-const udvalgtekunde = sorteredekunde.slice(0, 3);
 ---
-
 <section x-data="{ allecases: []}" x-init="allecases = await (await fetch('cases.json')).json();" class="grid grid-cols-3 gap-12 m-auto max-w-6xl mb-16">
     <template x-for="cases in allecases" :key="cases.id">
         <ul>
-            {udvalgtekunde.map(post => 
-            <li><span><a href={post.url}>
+            <li><span><a :href="cases.slug">
                     <article class="flex flex-col border-2 border-orange-500 hover:bg-orange-200 rounded-3xl p-6 w-80 h-caseCard">
                         <div>
                             <img x-bind:src="cases.coverimg" x-bind:alt="cases.coveralt">
@@ -30,7 +19,6 @@ const udvalgtekunde = sorteredekunde.slice(0, 3);
                     </article>
             </a></span>
             </li>
-            )}
         </ul>
     </template>
 </section>

@@ -8,7 +8,7 @@
             "Hjemmeside",
             "Web Development"
         ],
-        "slug": "herlufsholm",
+        "slug": "/cases/herlufsholm",
         "markdownFile": "/pages/cases/herlufsholm.md"
     },
     {
@@ -21,7 +21,7 @@
             "Hjemmeside",
             "Web Development"
         ],
-        "slug": "obi",
+        "slug": "/cases/obi",
         "markdownFile": "/pages/cases/obi.md"
     },
     {
@@ -34,7 +34,7 @@
             "Hjemmeside",
             "Web Development"
         ],
-        "slug": "bindevaevs",
+        "slug": "/cases/bindevaevs",
         "markdownFile": "/pages/cases/bindevaevs.md"
     },
     {
