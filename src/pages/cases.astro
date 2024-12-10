@@ -15,7 +15,7 @@ const udvalgtekunde = sorteredekunde.slice(0, 3);
 <MainLayout title="Titel">
 <!-------------------------------- HERO SEKTION ---------------------->
 
-	<article class="hidden md:block bg-cover bg-[url('/src/assets/images/heroweb.png')] mt-24 mb-32 md:mb-32">
+	<article class="hidden md:block bg-cover bg-[url('/src/assets/images/heroweb.png')] mt-24  pb-96">
 		<section class="grid grid-cols-1 gap-16 p-20 ">
 			<h1 class=" pt-24 text-6xl font-albert font-bold text-darkblue-500"> RESULTATER VI ER<br>
 			STOLTE AF</h1>
@@ -38,7 +38,11 @@ const udvalgtekunde = sorteredekunde.slice(0, 3);
 
 	<!-------------------------------- HERO SEKTION SLUT ---------------------->
 
-	<CardCase>
-
-	</CardCase>
+	<CardCase/>
+	<Kontakt
+		kontaktbeskrivelse="Har du spørgsmål eller vil vide mere om hvordan vi har skabt målbare resultater for vores kunder, så send os en besked. Vi er klar til at finde den rette løsning til dig."
+		kontaktimg="../public/albinot.png"
+		kontaktalt="Closeup af Albinot"
+		personnavn="Albinot Hoti"
+		personbeskrivelse="Co-founder"/>
 </MainLayout>

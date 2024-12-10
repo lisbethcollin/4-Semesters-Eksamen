@@ -1,13 +1,155 @@
 [{
-    "id": "1",
-    "coverimg": "",
-    "coveralt": "",
-    "casetitle": "Diætisten i Herlufsholm",
-    "casepunkt": [
-        "Digital marketing",
-        "Hjemmeside",
-        "Web Development"
-    ],
-    "slug": "herlufsholm",
-    "markdownFile": "/pages/cases/herlufsholm.md"
-}]
+        "id": "1",
+        "coverimg": "../public/caseslistview/herlufsholm.png",
+        "coveralt": "Heidi Dreist",
+        "casetitle": "Diætisten i Herlufsholm",
+        "casepunkt": [
+            "Digital marketing",
+            "Hjemmeside",
+            "Web Development"
+        ],
+        "slug": "herlufsholm",
+        "markdownFile": "/pages/cases/herlufsholm.md"
+    },
+    {
+        "id": "2",
+        "coverimg": "../public/caseslistview/obi.png",
+        "coveralt": "OBI Media",
+        "casetitle": "OBI Media",
+        "casepunkt": [
+            "Digital marketing",
+            "Hjemmeside",
+            "Web Development"
+        ],
+        "slug": "obi",
+        "markdownFile": "/pages/cases/obi.md"
+    },
+    {
+        "id": "3",
+        "coverimg": "../public/caseslistview/bindevaevs.png",
+        "coveralt": "Bindevævs akademiet",
+        "casetitle": "Bindevævs akademiet",
+        "casepunkt": [
+            "Digital marketing",
+            "Hjemmeside",
+            "Web Development"
+        ],
+        "slug": "bindevaevs",
+        "markdownFile": "/pages/cases/bindevaevs.md"
+    },
+    {
+        "id": "4",
+        "coverimg": "../public/caseslistview/bibs.png",
+        "coveralt": "BibsWorld",
+        "casetitle": "BIBSWorld.com",
+        "casepunkt": [
+            "Digital marketing"
+        ]
+    },
+    {
+        "id": "5",
+        "coverimg": "../public/caseslistview/firmagaver.png",
+        "coveralt": "FirmagaverOnline",
+        "casetitle": "Firmagaver- Online.dk",
+        "casepunkt": [
+            "Digital marketing"
+        ]
+    },
+    {
+        "id": "6",
+        "coverimg": "../public/caseslistview/boysens.png",
+        "coveralt": "Boysens føle og varmeteknik",
+        "casetitle": "Boysens føle og varmeteknik",
+        "casepunkt": [
+            "Digital marketing",
+            "Hjemmeside"
+        ]
+    },
+    {
+        "id": "7",
+        "coverimg": "../public/caseslistview/JVS.png",
+        "coveralt": "JVS Tømrer",
+        "casetitle": "JVS Tømrer",
+        "casepunkt": [
+            "Digital marketing",
+            "Hjemmeside"
+        ]
+    },
+    {
+        "id": "8",
+        "coverimg": "../public/caseslistview/bettertreatment.png",
+        "coveralt": "Better Treatment",
+        "casetitle": "Better Treatment",
+        "casepunkt": [
+            "Digital marketing"
+        ]
+    },
+    {
+        "id": "9",
+        "coverimg": "../public/caseslistview/vinosupremo.png",
+        "coveralt": "Vinosupremo",
+        "casetitle": "Vinosupremo.dk",
+        "casepunkt": [
+            "Digital marketing"
+        ]
+    },
+    {
+        "id": "10",
+        "coverimg": "../public/caseslistview/permataet.png",
+        "coveralt": "Permataet ApS",
+        "casetitle": "Permataet ApS",
+        "casepunkt": [
+            "Digital marketing",
+            "Hjemmeside"
+        ]
+    },
+    {
+        "id": "11",
+        "coverimg": "../public/caseslistview/weppler.png",
+        "coveralt": "Galleri Weppler",
+        "casetitle": "Galleri Weppler",
+        "casepunkt": [
+            "Digital marketing",
+            "Hjemmeside",
+            "Webshop"
+        ]
+    },
+    {
+        "id": "12",
+        "coverimg": "../public/caseslistview/lejdinmaskine.png",
+        "coveralt": "Lej Din Maskine",
+        "casetitle": "LejDinMaskine",
+        "casepunkt": [
+            "Digital marketing"
+        ]
+    },
+    {
+        "id": "13",
+        "coverimg": "../public/caseslistview/houseofbeauty.png",
+        "coveralt": "House of Beauty",
+        "casetitle": "House of Beauty",
+        "casepunkt": [
+            "Digital marketing"
+        ]
+    },
+    {
+        "id": "14",
+        "coverimg": "../public/caseslistview/pos.png",
+        "coveralt": "POScentrum.se",
+        "casetitle": "POScentrum.se",
+        "casepunkt": [
+            "Digital marketing"
+        ]
+    },
+    {
+        "id": "15",
+        "coverimg": "../public/caseslistview/healingbytorben.png",
+        "coveralt": "Healing by Torben",
+        "casetitle": "Healing by Torben",
+        "casepunkt": [
+            "Digital marketing",
+            "Hjemmeside",
+            "Web Development"
+        ]
+    }
+]

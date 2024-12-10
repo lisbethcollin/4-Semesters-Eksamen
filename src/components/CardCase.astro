@@ -1,5 +1,7 @@
 
 ---
+import Cases from "../pages/cases.astro";
+
 const kunde = await Astro.glob('../pages/cases/*.md');
 
 const sorteredekunde = kunde.sort((a, b) => {
@@ -10,15 +12,15 @@ const sorteredekunde = kunde.sort((a, b) => {
 const udvalgtekunde = sorteredekunde.slice(0, 3);
 ---
 
-<section x-data="{ allecases: []}" x-init="allecases = await (await fetch('cases.json')).json();" class="flex gap-14 max-w-min m-auto ">
+<section x-data="{ allecases: []}" x-init="allecases = await (await fetch('cases.json')).json();" class="grid grid-cols-3 gap-12 m-auto max-w-6xl mb-16">
     <template x-for="cases in allecases" :key="cases.id">
         <ul>
             {udvalgtekunde.map(post => 
             <li><span><a href={post.url}>
-                    <article class="flex flex-col place-content-between border-2 border-orange-500 hover:bg-orange-200 rounded-3xl py-4 px-6 w-64 h-96">
+                    <article class="flex flex-col border-2 border-orange-500 hover:bg-orange-200 rounded-3xl p-6 w-80 h-caseCard">
                         <div>
-                            <img src="cases.coverimg" alt="cases.coveralt">
-                            <h4 x-text="cases.casetitle"></h4>
+                            <img x-bind:src="cases.coverimg" x-bind:alt="cases.coveralt">
+                            <h4 x-text="cases.casetitle" class="font-albert font-semibold text-3xl break-words pb-6 pt-4"></h4>
                         </div>
                         <ul class="list-disc pl-6 space-y-2">
                             <template x-for="punkt in cases.casepunkt" :key="punkt">
@@ -32,49 +34,3 @@ const udvalgtekunde = sorteredekunde.slice(0, 3);
         </ul>
     </template>
 </section>
-<!-- ---
-import Cases from "../pages/cases.astro";
-
-/* const { coverimg, coveralt, caseurl, casetitle, casepunkt1, casepunkt2, casepunkt3} = Astro.props;
- */const kunde = await Astro.glob('../pages/cases/*.md');
-
-const sorteredekunde = kunde.sort((a, b) => {
-    if (a.frontmatter.date < b.frontmatter.date) return -1;
-    if (a.frontmatter.date > b.frontmatter.date) return 1;
-    return 0;
-});
-const udvalgtekunde = sorteredekunde.slice(0, 3);
-
----
-    <!-- alt hvad der omhandler lists til kunde i web -->
-   <!--  <ul class="grid grid-cols-3 justify-center gap-16 w-fit">
-        {udvalgtekunde.map(post => 
-        <li class=""><span><a href={post.url}>
-            <section class="bg-beige-500 drop-shadow-drop px-4 pt-4 lg:px-6 lg:pt-6 p-6 font-mont">
-                <img src={post.frontmatter.coverimage} alt={post.frontmatter.coveralt} class="object-cover  h-full w-full" />
-                <h3 class="my-4 font-mos text-lg lg:text-2xl">{post.frontmatter.title}</h3>
-                <p class="text-xs lg:text-sm">{post.frontmatter.beskrivelse} <span><a href={post.url} class="italic underline p-2">Læs mere</a></span></p>
-                <div class="flex flex-col text-center text-beige-100 mt-8 text-sm lg:text-lg items-baseline self-end">
-                    <a href="/" class="bg-red-600 drop-shadow-drop w-full py-2 mb-4">{post.frontmatter.time1}</a>
-                    {post.frontmatter.time2 && <a href="/" class="bg-red-600 drop-shadow-drop w-full py-2">{post.frontmatter.time2}</a>}
-                </div>
-            </section>
-        </a></span>
-        </li>
-        )}
-    </ul>  -->
-    <!-- slut på alt hvad der omhandler lists til kunde i web -->
-
-<!-- <a href={caseurl}>
-    <section>
-        <img src={coverimg} alt={coveralt}>
-        <h3>{casetitle}</h3>
-        <ul>
-            <li>{casepunkt1}</li>
-            {casepunkt2 && <li>{casepunkt2}</li>}
-            {casepunkt3 && <li>{casepunkt3}</li>}
-        </ul>
-    </section>
-</a>
- -->
- -->
