@@ -5,7 +5,7 @@ beskrivelse: "For dig der drømmer om et ærligt og kærligt forhold til mad"
 kunde: "Heidi Dreist"
 slug: "Herlufsholm"
 kundebeskrivelse: "Ejer af Diætisten i Herlufsholm"
-
+casetitle: "Forbedret SEO og ny hjemmeside skaber vækst"
 
 --- 
 # Forbedret SEO og ny hjemmeside skaber vækst
