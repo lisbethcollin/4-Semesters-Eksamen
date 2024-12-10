@@ -2,7 +2,11 @@
 import { Image } from 'astro:assets';
 import google from '../assets/images/googlepartner.png';
 import bornebyer from '../assets/images/bornebyer.svg';
-import some from '../assets/images/some.png';
+import faec from '../assets/images/faec.svg';
+import x from '../assets/images/x.svg';
+import link from '../assets/images/link.svg';
+import insta from '../assets/images/insta.svg';
+import you from '../assets/images/you.svg';
 ---
 <!-- web -->
  <hr class="border-2 border-orange-500">
@@ -79,8 +83,12 @@ import some from '../assets/images/some.png';
         
         
 
-        <div >
-            <Image src={some} alt="some" width="230" height="40" class=""/></div>
+        <div class="flex items-center space-x-4">
+            <Image src={faec} alt="faecbook" width="18" height="36" class=""/>
+            <Image src={x} alt="some" width="34" height="36" class=""/>
+            <Image src={link} alt="linkedin" width="30" height="36" class=""/>
+            <Image src={insta} alt="instagram" width="34" height="36" class=""/>
+            <Image src={you} alt="youtube" width="47" height="36" class=""/>
           </div>
 
     </article>
