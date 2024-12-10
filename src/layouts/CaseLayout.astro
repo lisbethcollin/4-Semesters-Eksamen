@@ -1,36 +1,222 @@
 ---
 import MainLayout from "./MainLayout.astro";
+import Number from '../components/Number.astro';
+import Button from '../components/Button.astro';
+import Kontakt from '../components/Kontakt.astro';
 const {frontmatter} = Astro.props;
 ---
 <MainLayout title="Titel">
-    <!-------------------------------- HERO SEKTION ---------------------->
+    <!-------------------------------------- HERO SEKTION ------------------------------>
 
 	<article class="hidden md:block bg-cover bg-[url('/src/assets/images/heroweb.png')] mt-24 mb-32 md:mb-32">
 		<section class="grid grid-cols-1 gap-16 p-20 ">
 			<h1 class=" pt-24 text-6xl font-albert font-black text-darkblue-500"> {frontmatter.casetitle}</h1>
 		</section>
 		<section class="grid grid-cols-2 gap-16 p-20">
-			<p class="text-base max-w-md font-outfit text-darkblue-500 col-start-2">Oplev, hvordan vi har hjulpet virksomheder med at gøre deres digitale visioner til virkelighed. Hver kunde har haft unikke udfordringer og ambitioner, og vores samarbejder spænder fra strategisk rådgivning og specialiseret konsulentarbejde til skræddersyet digital markedsføring – både inden for vores ekspertområder og på tværs af alle digitale platforme.</p>
+			<div class="col-start-2">
+		<h3 class="text-3xl text-darkblue-500 font-bold pb-10">Udfordringen</h3>
+			<p class="text-base max-w-md font-outfit text-darkblue-500 ">{frontmatter.udfordringen}</p>
+		</div>
 		</section>
 	</article>
 
-<!------------------ mobil ---------------------->
-
+<!-------------------------- mobil --------------------------->
 <article class="block md:hidden bg-cover bg-[url('/src/assets/images/heromobil.png')] mt-24">
 	<section class="grid grid-cols-1 gap-16 p-6 md:hidden">
-	<h1 class="pt-24 mb-12 text-5xl font-albert font-bold text-darkblue-500">RESULTATER <br> VI ER<br> STOLTE AF</h1>
+	<h1 class="pt-24 mb-12 text-5xl font-albert font-bold text-darkblue-500">{frontmatter.casetitle}</h1>
 	
 	<section>
-			<p class="text-base max-w-md font-outfit text-darkblue-500">Oplev, hvordan vi har hjulpet virksomheder med at gøre deres digitale visioner til virkelighed. Hver kunde har haft unikke udfordringer og ambitioner, og vores samarbejder spænder fra strategisk rådgivning og specialiseret konsulentarbejde til skræddersyet digital markedsføring – både inden for vores ekspertområder og på tværs af alle digitale platforme.</p>
+		<div>
+			<h3 class="text-3xl text-darkblue-500 font-bold pb-10">Udfordringen</h3>
+			<p class="text-base max-w-md font-outfit text-darkblue-500">{frontmatter.udfordringen}</p>
+		</div>
 		</section>
 </article>
+<!-------------------------------- HERO SEKTION SLUT ------------------------>
 
-	<!-------------------------------- HERO SEKTION SLUT ---------------------->
-	<div class="">
-		<img src={frontmatter.coverimage} alt={frontmatter.coveralt} class="mb-8"/>
-		<section class="prose">
-			<h1>{frontmatter.title}</h1>
-            <h2>{frontmatter.kunde}</h2>
-		</section>
-	</div>
+
+<!-------------------------------- TEKST 1 SEKTION -------------------------->
+<article class="grid md:grid-cols-2 px-6 md:px-24">
+
+<section>
+	<h3 class="text-3xl text-darkblue-500 font-bold pb-10">{frontmatter.titel1}</h3>
+	<p>{frontmatter.tekst1}</p>
+</section>
+<section>card</section>
+
+</article>
+<!-------------------------------- TEKST 1 SEKTION SLUT ---------------------->
+
+
+
+<!-------------------------------- MOCKUP SEKTION  --------------------------->
+<article class="hidden md:block bg-cover bg-[url('/src/assets/images/heroweb.png')] mt-24 mb-32 pt-32 pb-40">
+	<section class="grid grid-cols-2 gap-40 px-24">
+<section>
+ <img src={frontmatter.mockupimg} alt={frontmatter.mockupalttext} class="h-full w-full" />
+<div class="grid place-content-center md:place-content-start"><Button variant="primary" >Se hjemmesiden</Button></div> 
+</section>
+<section>
+ <img src={frontmatter.farverimg} alt={frontmatter.farveralttext} class="h-full w-full" />
+<div class="text-center">
+	<p class="text-3xl">{frontmatter.title}</p>
+	<p class="text-xl" >{frontmatter.beskrivelse}</p>
+</div>
+</section>
+</section>
+</article>
+
+<!--------------------------------------- Mobil ------------------------------------>
+
+<article  class="block md:hidden bg-cover bg-[url('/src/assets/images/heromobil.png')] mb-10">
+	<section class="px-6 pb-24 grid gap-10">
+<div class="pb-20">
+ <img src={frontmatter.mockupimg} alt={frontmatter.mockupalttext} class="h-full w-full" />
+<div class="grid place-content-center md:place-content-start "><Button variant="primary" >Se hjemmesiden</Button></div> 
+</div>
+<div class="pb-20">
+ <img src={frontmatter.farverimg} alt={frontmatter.farveralttext} class="h-full w-full" />
+<div class="text-center">
+	<p class="text-3xl">{frontmatter.title}</p>
+	<p class="text-xl" >{frontmatter.beskrivelse}</p>
+</div>
+</div>
+</section>
+</article>
+<!------------------------------------- MOCKUP SEKTION SLUT ------------------------------->
+
+
+
+<!------------------------------------------- TAL SEKTION ---------------------------------->
+<article class="px-6 md:px-24 md:mb-16">
+	<h3 class="text-3xl text-darkblue-500 font-bold pb-10" >Resultatet</h3>
+<section class="grid max-w-10 gap-20 md:grid md:grid-cols-3 md:gap-10">
+
+<div class="mr-24 max-w-10 md:m-0">
+<Number 
+tal="+200"
+taltitle="KUNDER"
+talbeskrivelse="Har samarbejdet med os gennem årene, fordelt på forskellige brancher og projekter"
+/>
+</div>
+
+<div class="text-right max-w-10 md:text-left ml-24 md:m-0">
+<Number  
+tal="+50"
+taltitle="MIO. DKK"
+talbeskrivelse="Har vi samlet genereret for vores kunder gennem optimerede marketindstrategier"
+/>
+</div>
+<div class="mr-24 max-w-10 md:m-0">
+<Number 
+tal="+250"
+taltitle="WEBSITES"
+talbeskrivelse="Har vi  designet og hjulpet vores kunder med at vækste igennem siden 2021"
+/>
+</div>
+</section>
+
+</article>
+<!------------------------------------- TAL SEKTION SLUT  ----------------------------------->
+
+
+
+<!--------------------------------------- QUOTE SEKTION   ------------------------------------>
+<article class="hidden md:block bg-cover bg-[url('/src/assets/images/heroweb.png')] py-32">
+<section class="grid grid-cols-2 px-24">
+<div>
+<h3 class="text-3xl text-darkblue-500 font-bold pb-10">{frontmatter.quotetitel}</h3>
+<p class="text-5xl md:text-7xl text-blue-500 uppercase font-outfit font-bold" >“</p>
+<p>{frontmatter.quote}</p>
+</div>
+
+
+<div class="order-first grid ">
+	 <img src={frontmatter.kundeimg} alt={frontmatter.kundeimgalt} class="max-h-56" />
+	 <div class="">
+	<p>{frontmatter.kunde}</p>
+	<p>{frontmatter.kundebeskrivelse}</p>
+</div>
+</div>
+</section>
+</article>
+<!--------------------------------------- Mobil ------------------------------------>
+<article class="block md:hidden bg-cover bg-[url('/src/assets/images/heromobil.png')] px-6 pt-40 pb-56 mt-24">
+
+<section>
+<h3 class="text-3xl text-darkblue-500 font-bold pb-10" >{frontmatter.quotetitel}</h3>
+<p class="text-5xl md:text-7xl text-blue-500 uppercase font-outfit font-bold" >“</p>
+<p>{frontmatter.quote}</p>
+</section>
+
+
+<section class="grid grid-cols-2">
+	 <img src={frontmatter.kundeimg} alt={frontmatter.kundeimgalt} class="max-h-56" />
+	 <div>
+	<p>{frontmatter.kunde}</p>
+	<p>{frontmatter.kundebeskrivelse}</p>
+</div>
+</section>
+
+</article>
+<!------------------------------------- QUOTE SEKTION SLUT  ---------------------------------->
+
+
+
+<!------------------------------------- TEKST 2 CASE SEKTION   -------------------------------->
+<article class="grid md:grid-cols-2 gap-6 md:gap-10 px-6 md:px-24">
+
+<section>
+	<h3 class="text-3xl text-darkblue-500 font-bold pb-10" >{frontmatter.titel1}</h3>
+	<p>{frontmatter.tekst1}</p>
+</section>
+ <img src={frontmatter.tekst2img} alt={frontmatter.tekst2imgalt} class="h-full w-full" />
+
+</article>
+<!------------------------------------- TEKST 2 CASE SEKTION SLUT  ---------------------------->
+
+
+<!------------------------------------- NÆSTE CASE SEKTION   ------------------------------>
+<article class="hidden md:block  mt-24 mb-32 md:mb-32 px-24 ">
+<section class="grid grid-cols-2">
+
+
+<div>
+card
+</div>
+
+<div>
+<h3 class="text-3xl text-darkblue-500 font-bold pb-10" >Vil du se mere af vores arbejde?</h3>
+<p class="text-darkblue-500 font-outfit">Her kan du se et udsnit af vores arbejde og lade dig inspirere. Hver kunde har haft unikke udfordringer og ambitioner, og vores samarbejder spænder fra strategisk rådgivning og specialiseret konsulentarbejde til skræddersyet digital markedsføring – både inden for vores ekspertområder og på tværs af alle digitale platforme.</p>
+<div class="grid place-content-start"><Button variant="primary" >Lær os at kende</Button></div>
+</div
+>
+</section>
+</article>
+<!--------------------------------------- Mobil ------------------------------------>
+<article class="block md:hidden mt-24 px-6">
+<h3 class="text-3xl text-darkblue-500 font-bold pb-10" >Vil du se mere af vores arbejde?</h3>
+<section>
+card
+</section>
+
+<section>
+<p class="text-darkblue-500 font-outfit">Her kan du se et udsnit af vores arbejde og lade dig inspirere. Hver kunde har haft unikke udfordringer og ambitioner, og vores samarbejder spænder fra strategisk rådgivning og specialiseret konsulentarbejde til skræddersyet digital markedsføring – både inden for vores ekspertområder og på tværs af alle digitale platforme.</p>
+<div class="grid place-content-center md:place-content-start"><Button variant="primary" >Alle cases</Button></div> 
+</section>
+</article>
+
+
+<!------------------------------------- NÆSTE CASE SEKTION   ------------------------------>
+				<!--------------------------------  KONTAKT SEKTION ---------------------->
+<article class="mb-32 px-6 md:px-24md:mb-56">
+	<Kontakt 
+		kontaktbeskrivelse="Har du spørgsmål eller vil vide mere om hvordan vi har skabt målbare resultater for vores kunder, så send os en besked. Vi er klar til at finde den rette løsning til dig."
+		kontaktimg="../public/thorbjorn.png"
+		kontaktalt="Closeup af Mette Line"
+		personnavn="Mette Line Tarp Jørgensen"
+		personbeskrivelse="Webudvikler, Designer & Projektleder"/>
+</article>
+		<!--------------------------------  KONTAKT SEKTION SLUT---------------------->
+</MainLayout>
 </MainLayout>
