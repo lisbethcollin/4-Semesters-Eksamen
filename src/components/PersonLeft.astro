@@ -14,16 +14,13 @@ const { personlimg, personlalt, personleftnavn, personleftbeskrivelse, personlef
 <p class="font-outfit text-base" >{personleftbeskrivelse}</p>
 
 
-{ kompetencer.lenght > 0 ? (
+
 <ul>
     {kompetencer.map(kompetence => (
         <li>{kompetence}</li>
     ))}
 </ul>
-) : (
-    <p>den driller</p>
-)
-}
+
 
   
 

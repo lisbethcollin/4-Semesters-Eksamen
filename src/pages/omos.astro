@@ -8,8 +8,6 @@ import Number from '../components/Number.astro';
 import PersonLeft from "../components/PersonLeft.astro";
 import PersonRight from "../components/PersonRight.astro";
 
-const albinot = ['1', '2', '3'];
-
 ---
 <MainLayout title="Titel">
 
@@ -97,7 +95,7 @@ const albinot = ['1', '2', '3'];
 		personlefttitel="Webudvikler, Designer & Projektleder"
 		personleftbeskrivelse="Jeg kombinerer kreativitet og tekniske færdigheder for at udvikle brugervenlige og visuelt stærke WordPress-hjemmesider. Jeg styrer projekter fra idé til lancering,med fokus på design, udvikling og projektledelse."
 		personlimg="../public/mette.png"
-        :kompetencer="{ 1: 'Webudvikler', 2: 'Designer', 3: 'Projektleder'}"/>
+        kompetencer={['test1', 'test2', 'test3']}/>
       
 </article>
 
@@ -109,7 +107,7 @@ const albinot = ['1', '2', '3'];
 		personrighttitel="Co-Founder"
 		personrightbeskrivelse="Jeg er medstifter af Besa Digital, hvor jeg arbejder med AI og innovative marketingstrategier for at skabe maksimal ROI for vores kunder."
 		personrimg="../public/albinot.png"
-        kompetencer={albinot}/>
+        kompetencer={['test1', 'test2', 'test3']}/>
       
 </article>
 
@@ -120,7 +118,7 @@ const albinot = ['1', '2', '3'];
 		personlefttitel="Co-Founder"
 		personleftbeskrivelse="Jeg er co-founder med fokus på ledelse, relationssalg og salgsstrategier. Min erfaring omfatter salgsledelse, account management, digitalt salg og kontraktforhandling, altid med fokus på at skabe stærke relationer og resultater."
 		personlimg="../public/thorbjorn.png"
-        :kompetencer="{ 1: 'Webudvikler', 2: 'Designer', 3: 'Projektleder'}"/>
+        kompetencer={['test1', 'test2', 'test3']}/>
       
 </article>
 
@@ -130,7 +128,7 @@ const albinot = ['1', '2', '3'];
 		personrighttitel="Frontend udvikler, SEO, Blog"
 		personrightbeskrivelse="Jeg er studentermedhjælper med fokus på SEO, linkbuilding og optimerede løsninger. I mit arbejde kombinerer jeg kreativitet og tekniske færdigheder for at udvikle brugervenlige og visuelt stærke WordPress-hjemmesider.  "
 		personrimg="../public/mette.png"
-        :kompetencer="{ 1: 'Webudvikler', 2: 'Designer', 3: 'Projektleder'}"/>
+        kompetencer={['test1', 'test2', 'test3']}/>
       
 </article>
 
