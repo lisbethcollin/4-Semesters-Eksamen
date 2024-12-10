@@ -2,7 +2,7 @@
         "id": "1",
         "coverimg": "../public/caseslistview/herlufsholm.png",
         "coveralt": "Heidi Dreist",
-        "casetitle": "Diætisten i Herlufsholm",
+        "casetitle": "Diætisten i<br/>Herlufsholm",
         "casepunkt": [
             "Digital marketing",
             "Hjemmeside",
@@ -28,7 +28,7 @@
         "id": "3",
         "coverimg": "../public/caseslistview/bindevaevs.png",
         "coveralt": "Bindevævs akademiet",
-        "casetitle": "Bindevævs akademiet",
+        "casetitle": "Bindevævs<br/>akademiet",
         "casepunkt": [
             "Digital marketing",
             "Hjemmeside",
@@ -50,7 +50,7 @@
         "id": "5",
         "coverimg": "../public/caseslistview/firmagaver.png",
         "coveralt": "FirmagaverOnline",
-        "casetitle": "Firmagaver- Online.dk",
+        "casetitle": "Firmagaver-<br/>Online.dk",
         "casepunkt": [
             "Digital marketing"
         ]
@@ -58,8 +58,8 @@
     {
         "id": "6",
         "coverimg": "../public/caseslistview/boysens.png",
-        "coveralt": "Boysens føle og varmeteknik",
-        "casetitle": "Boysens føle og varmeteknik",
+        "coveralt": "Boysens køle og varmeteknik",
+        "casetitle": "Boysens køle og<br/>varmeteknik",
         "casepunkt": [
             "Digital marketing",
             "Hjemmeside"
@@ -144,7 +144,7 @@
     {
         "id": "15",
         "coverimg": "../public/caseslistview/healingbytorben.png",
-        "coveralt": "Healing by Torben",
+        "coveralt": "Healing by<br/>Torben",
         "casetitle": "Healing by Torben",
         "casepunkt": [
             "Digital marketing",
