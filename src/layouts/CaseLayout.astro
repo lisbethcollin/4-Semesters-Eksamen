@@ -7,7 +7,7 @@ const {frontmatter} = Astro.props;
 		<img src={frontmatter.coverimage} alt={frontmatter.coveralt} class="mb-8"/>
 		<section class="prose">
 			<h1>{frontmatter.title}</h1>
-			<slot />
+            <h2>{frontmatter.kunde}</h2>
 		</section>
 	</div>
 </MainLayout>
