@@ -4,7 +4,7 @@ const { kontaktimg, kontaktalt, kontaktbeskrivelse, personnavn, personbeskrivels
 ---
 
 <section class="max-w-7xl m-auto">
-    <div class="grid grid-cols-1 md:grid-cols-5">
+    <div class="grid grid-cols-1 md:grid-cols-5 text-darkblue-500">
     <div class="col-span-1 md:col-span-2">
     <h3 class="font-albert font-bold text-4xl mb-6">{title}</h3>
     <p class="font-outfit text-xl pb-6">{kontaktbeskrivelse}</p>
@@ -16,12 +16,12 @@ const { kontaktimg, kontaktalt, kontaktbeskrivelse, personnavn, personbeskrivels
     <div class="grid grid-cols-1 md:grid-cols-5 gap-10 pt-4">
     
      
-            <div class="col-span-1 md:col-span-2">
+            <div class="col-span-1 md:col-span-2 text-darkblue-500">
    <img src={kontaktimg} alt={kontaktalt}>
             <p class="font-outfit font-semibold pt-6">{personnavn}</p>
             <p class="font-outfit pt-2">{personbeskrivelse}</p>
             </div>
-
+    <!-------------------------------- form -------------------------------->
         <article class="col-span-1  md:col-span-3" >
             <form>
                 <div x-data="{ selectedInput: null }">
@@ -31,14 +31,14 @@ const { kontaktimg, kontaktalt, kontaktbeskrivelse, personnavn, personbeskrivels
                                 x-on:click="selectedInput = 1"
                                 x-bind:class="selectedInput === 1 ? 'border-b-2 border-b-darkblue-600' : 'hover:border-b-2 hover:border-b-blue-500'"
                                 class="block border-b-2 shadow-web border-orange-500 mb-4 text-darkblue-500 font-albert">
-                                <p class="font-semibold text-2xl ml-3 mt-2 mb-1">Navn</p>
+                                <p class="font-semibold text-2xl ml-3 mt-2 mb-1 text-darkblue-500">Navn</p>
                                 <input type="text" name="navn" placeholder="Anders And" class="block border-none outline-none focus:ring-0 w-full placeholder:italic placeholder:text-darkblue-200 text-darkblue-500 bg-transparent"/></input>
                             </label>
                             <label for="tlf"
                                 x-on:click="selectedInput = 2"
                                 x-bind:class="selectedInput === 2 ? 'border-b-2 border-b-darkblue-600' : 'hover:border-b-2 hover:border-b-blue-500'"
                                 class="block border-b-2 shadow-web border-orange-500 mb-4">
-                                <p class="font-semibold text-2xl ml-3 mt-2 mb-1">Telefonnummer</p>
+                                <p class="font-semibold text-2xl ml-3 mt-2 mb-1 text-darkblue-500">Telefonnummer</p>
                                     <input type="tel" name="tlf" placeholder="8888 8888" class="block border-none outline-none focus:ring-0 w-full placeholder:italic placeholder:text-darkblue-200 text-darkblue-500 bg-transparent"></input>
                             </label>
                         </article>
@@ -46,14 +46,14 @@ const { kontaktimg, kontaktalt, kontaktbeskrivelse, personnavn, personbeskrivels
                         x-on:click="selectedInput = 3"
                         x-bind:class="selectedInput === 3 ? 'border-b-2 border-b-darkblue-600' : 'hover:border-b-2 hover:border-b-blue-500'"
                         class="block border-b-2 shadow-web border-orange-500 mb-4">
-                        <p class="font-semibold text-2xl ml-3 pt-2 mb-1">Email</p>
+                        <p class="font-semibold text-2xl ml-3 pt-2 mb-1 text-darkblue-500">Email</p>
                             <input type="email" name="email" placeholder="andersand@andeby.dk" class="block border-none outline-none focus:ring-0 w-full placeholder:italic placeholder:text-darkblue-200 text-darkblue-500 bg-transparent"></input>
                         </label>
                         <label for="besked"
                         x-on:click="selectedInput = 4"
                         x-bind:class="selectedInput === 4 ? 'border-b-2 border-b-darkblue-600' : 'hover:border-b-2 hover:border-b-blue-500'"
                         class="grid items-end content-between border-b-2 shadow-web border-orange-500 mb-4 h-32">
-                        <p class="font-semibold text-2xl ml-3 mt-2 mb-1">Besked</p>
+                        <p class="font-semibold text-2xl ml-3 mt-2 mb-1 text-darkblue-500">Besked</p>
                             <input type="text" name="besked" height="128" placeholder="Jeg mangler en ny hjemmeside, kan i hjælpe med det?" class="block border-none outline-none focus:ring-0 w-full placeholder:italic placeholder:text-darkblue-200 text-darkblue-500 bg-transparent"></input>
                         </label>
                         <div class="flex justify-end">
