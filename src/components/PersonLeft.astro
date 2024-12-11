@@ -14,14 +14,14 @@ const { personlimg, personlalt, personleftnavn, personleftbeskrivelse, personlef
     </div>
 
   <div>
-      <img src={personlimg} alt={personlalt} class="block md:hidden">
+      <img src={personlimg} alt={personlalt} class="block max-h-96 mx-auto md:hidden">
     </div>
 
     <hr class="border-blue-500 border-2 hidden md:block">
-    <p class="font-outfit text-base pt-6 pb-12" >{personleftbeskrivelse}</p>
+    <p class="font-outfit text-base pt-6 pb-12 leading-7 " >{personleftbeskrivelse}</p>
     <p class="font-bold font-outfit text-base pb-4">Jeg kan hjælpe dig med</p>
 
-<ul class="font-outfit text-base list-disc grid grid-col-1 md:grid-cols-2 gap-4 px-6">
+<ul class="font-outfit text-base list-disc grid grid-col-1 lg:grid-cols-2 gap-4 px-6">
     {kompetencer.map(kompetence => (
         <li>{kompetence}</li>
     ))}

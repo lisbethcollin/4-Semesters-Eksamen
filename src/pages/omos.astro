@@ -15,7 +15,7 @@ import PersonRight from "../components/PersonRight.astro";
 
    
 
-<article class="hidden md:block bg-cover bg-[url('/src/assets/images/heroweb.png')] mt-10 mb-32 md:mb-32">
+<article class="hidden md:block bg-cover bg-[url('/src/assets/images/heroweb.png')] mt-10  md:mb-32">
 
 <section class="grid md:grid-cols-1 md:gap-16 md:p-24 md:mb-14">
 	<h1 class=" pt-24 md:text-6xl font-albert font-bold text-darkblue-500 uppercase">Mød dit <br>dedikerede team </h1>
@@ -35,21 +35,22 @@ import PersonRight from "../components/PersonRight.astro";
 
 <!-------------------- mobil ---------------------->
 
-<article class="block md:hidden bg-cover bg-[url('/src/assets/images/heromobil.png')] mt-24 mb-24">
-	<section class="grid grid-cols-1 gap-16 p-6 md:hidden">
-	<h1 class="pt-24 mb-12 text-4xl font-albert font-bold text-darkblue-500 uppercase">Mød dit <br>dedikerede team </h1>
+<article class="block md:hidden bg-cover bg-[url('/src/assets/images/heromobil.png')] mt-24 ">
+	<section class="pb-48">
+    <div class="grid grid-cols-1 gap-16 pb-48 px-6 ">
+	<h1 class="pt-24 mb-12 text-5xl font-albert font-bold text-darkblue-500 uppercase">Mød dit <br>dedikerede team </h1>
 
-	</section>
+	</div>
 
-<section class="px-6 flex flex-col md:flex-row">
+<div class="px-6 flex flex-col md:flex-row">
 
 	<div class=" text-darkblue-500 text-base font-outfit py-8">
-    	<p class="">“Besa-digital” er mere end et navn – det er vores kerneværdi. Inspireret af det albanske udtryk “Besa”, som betyder “at holde ord”, bygger vi vores arbejde på tillid, troværdighed og aftaler, du kan regne med. Vi holder vores løfter og er altid transparente og ærlige.</p>
-    	<p>Vores mission er at levere kvalitetsløsninger til virksomheder, der deler vores værdisæt. Vi tager kun projekter ind, vi tror på, og sikrer derved løsninger af højeste kvalitet. Det er vores løfte som din digitale samarbejdspartner.</p>
+    	<p class=" leading-7">“Besa-digital” er mere end et navn – det er vores kerneværdi. Inspireret af det albanske udtryk “Besa”, som betyder “at holde ord”, bygger vi vores arbejde på tillid, troværdighed og aftaler, du kan regne med. Vi holder vores løfter og er altid transparente og ærlige.</p>
+    	<p class="leading-7">Vores mission er at levere kvalitetsløsninger til virksomheder, der deler vores værdisæt. Vi tager kun projekter ind, vi tror på, og sikrer derved løsninger af højeste kvalitet. Det er vores løfte som din digitale samarbejdspartner.</p>
 	</div>
 		<Image src={besa} alt="" class="w-full order-first md:order-last"/>
+</div>
 </section>
-
 </article>
 
 <!-------------------------------- HERO SEKTION SLUT ---------------------->
@@ -95,7 +96,7 @@ import PersonRight from "../components/PersonRight.astro";
 		personlefttitel="Webudvikler, Designer & Projektleder"
 		personleftbeskrivelse="Jeg kombinerer kreativitet og tekniske færdigheder for at udvikle brugervenlige og visuelt stærke WordPress-hjemmesider. Jeg styrer projekter fra idé til lancering,med fokus på design, udvikling og projektledelse."
 		personlimg="../public/mette.png" 
-        kompetencer={['WordPress-udvikling', 'HTML, CSS & JavaScript', 'Digital strategi & implementering', 'Projektstyring & kundehåndtering', 'Webdesign & UX/UI']}/>
+        kompetencer={['Webdesign & UX/UI', 'WordPress-udvikling',  'HTML, CSS & JavaScript', 'Digital strategi & implementering', 'Projektstyring & kundehåndtering',  ]}/>
       
 </article>
 
@@ -107,7 +108,7 @@ import PersonRight from "../components/PersonRight.astro";
 		personrighttitel="Co-Founder"
 		personrightbeskrivelse="Jeg er medstifter af Besa Digital, hvor jeg arbejder med AI og innovative marketingstrategier for at skabe maksimal ROI for vores kunder."
 		personrimg="../public/albinot.png"
-        kompetencer={['Budget Management', 'Cross-Channel Marketing', 'Team Leadership' , 'Paid Media Strategy', 'SOME Strategy', 'AI & Machine Learning', 'Data Analytics & Insights', 'Customer Acquisition & Retention']}/>
+        kompetencer={[ 'Cross-Channel Marketing', 'AI & Machine Learning', 'Team Leadership' , 'Paid Media Strategy', 'SOME Strategy', 'Budget Management',  'Data Analytics & Insights', 'Customer Acquisition & Retention']}/>
       
 </article>
 
@@ -118,7 +119,7 @@ import PersonRight from "../components/PersonRight.astro";
 		personlefttitel="Co-Founder"
 		personleftbeskrivelse="Jeg er co-founder med fokus på ledelse, relationssalg og salgsstrategier. Min erfaring omfatter salgsledelse, account management, digitalt salg og kontraktforhandling, altid med fokus på at skabe stærke relationer og resultater."
 		personlimg="../public/thorbjorn.png"
-        kompetencer={['Relationssalg', 'Salgsledelse', 'Projektledelse', 'Account Management', 'SoMe & Digitalt Salg', 'Kontraktforhandling',]}/>
+        kompetencer={['Relationssalg', 'Salgsledelse', 'Projektledelse',  'SoMe & Digitalt Salg', 'Kontraktforhandling', 'Account Management',]}/>
       
 </article>
 
@@ -128,7 +129,7 @@ import PersonRight from "../components/PersonRight.astro";
 		personrighttitel="Frontend udvikler, SEO, Blog"
 		personrightbeskrivelse="Jeg er studentermedhjælper med fokus på SEO, linkbuilding og optimerede løsninger. I mit arbejde kombinerer jeg kreativitet og tekniske færdigheder for at udvikle brugervenlige og visuelt stærke WordPress-hjemmesider.  "
 		personrimg="../public/lisbeth.png"
-        kompetencer={['Webdesign', 'WordPress udvikling', 'UI/UX', 'HTML, CSS & JavaScript', 'Indholdsproduktion', 'Illustrator & Photoshop', 'SEO, Linkbuilding']}/>
+        kompetencer={['Webdesign','WordPress udvikling', 'HTML, CSS & JavaScript', 'Illustrator & Photoshop', 'SEO, Linkbuilding',  'Indholdsproduktion', 'UI/UX',]}/>
       
 </article>
 
