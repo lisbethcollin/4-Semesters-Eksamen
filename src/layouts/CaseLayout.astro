@@ -36,7 +36,7 @@ const {frontmatter} = Astro.props;
 
 
 <!-------------------------------- TEKST 1 SEKTION -------------------------->
-<article class="grid md:grid-cols-2 px-6 mb-40 md:px-24">
+<article class="grid md:grid-cols-2 px-6 mb-40 md:px-24 ">
 
 <section>
 	<h3 class="text-3xl md:text-5xl  text-darkblue-500 font-albert font-bold pb-10">{frontmatter.titel1}</h3>
@@ -46,31 +46,18 @@ const {frontmatter} = Astro.props;
 
 
 <!-------------------------------- CARD -------------------------->
-<section>
-   <template x-for="services in alleservices" :key="services.id">
-        <ul>
-            <li>
-                <article class="md:flex md:flex-col place-content-between border-2 border-orange-500 hover:bg-orange-200 rounded-3xl py-4 px-6 w-72 h-96">
-                    <div>
-                        <p x-text="services.servicenummer" class="font-albert text-sm"></p>
-                        <h4 x-text="services.servicetitle" class="font-albert text-lg font-medium uppercase"></h4>
-                    </div>
-                    <div>
-                        <p x-text="services.servicebeskrivelse" class="font-albert italic font-light"></p>
-                        <hr class="border-blue-500 mt-2 mb-4">
-                        <ul class="list-disc pl-6 space-y-2">
-                            <template x-for="punkt in services.servicepunkt" :key="punkt">
-                                <li x-text="punkt" class="font-albert text-sm"></li>
-                            </template>
-                        </ul>
-                    </div>
-                </article>
-            </li>
-        </ul>
-    </template>
-<div class="md:flex md:flex-col place-content-between border-2 border-orange-500 hover:bg-orange-200 rounded-3xl py-4 px-6 w-72 h-96">
-<h4>Det fik kunden hjælp til</h4>
+<section class="pt-14 md:pt-0 grid place-content-center">
 
+<div class=" place-content-center border-2 border-orange-500 rounded-3xl py-4 px-6 w-72 h-96">
+<h4 class="font-albert text-lg font-medium uppercase">Det fik kunden hjælp til</h4>
+<div>
+<hr class="border-blue-500 mt-2 mb-4">
+<ul class="list-disc pl-6 space-y-2">
+	<li class="font-albert text-sm">SEO</li>
+	<li class="font-albert text-sm">Strategisk rådgivning</li>
+	<li class="font-albert text-sm">Ny hjemmeside i Wordpress</li>
+</ul>
+</div>
 </div>
 
 </section>
@@ -99,8 +86,8 @@ const {frontmatter} = Astro.props;
 
 <!--------------------------------------- Mobil ------------------------------------>
 
-<article  class="block md:hidden bg-cover bg-[url('/src/assets/images/heromobil.png')] mb-10">
-	<section class="px-6 pb-24 grid gap-10">
+<article  class="block md:hidden bg-cover bg-[url('/src/assets/images/heromobil.png')] my-12">
+	<section class="px-6 pt-20 pb-44 my-20 grid gap-10">
 <div class="pb-20">
  <img src={frontmatter.mockupimg} alt={frontmatter.mockupalttext} class="px-6 h-full w-full" />
 <div class="grid place-content-center md:place-content-start "><Button variant="primary" >Se hjemmesiden</Button></div> 
@@ -153,12 +140,12 @@ talbeskrivelse="I Googles søgeresultater ved hjælp af SEO-optimeringer"
 
 
 <!--------------------------------------- QUOTE SEKTION   ------------------------------------>
-<article class="hidden md:block bg-cover bg-[url('/src/assets/images/heroweb.png')] mb-10 pb-56 py-32">
+<article class="hidden md:block bg-cover bg-[url('/src/assets/images/heroweb.png')] mb-10 pb-56 py-48">
 <section class="grid grid-cols-2 px-24">
 <div>
 <h3 class="text-5xl text-darkblue-500 font-albert font-bold pb-10">{frontmatter.quotetitel}</h3>
 <p class="text-5xl md:text-7xl text-blue-500 uppercase font-outfit font-bold" >“</p>
-<p>{frontmatter.quote}</p>
+<p class="font-outfit text-darkblue-500 leading-7">{frontmatter.quote}</p>
 </div>
 
 
@@ -177,7 +164,7 @@ talbeskrivelse="I Googles søgeresultater ved hjælp af SEO-optimeringer"
 <section class="pb-14">
 <h3 class="text-3xl text-darkblue-500 font-albert font-bold pb-10" >{frontmatter.quotetitel}</h3>
 <p class="text-5xl md:text-7xl text-blue-500 uppercase font-outfit font-bold" >“</p>
-<p>{frontmatter.quote}</p>
+<p class="font-outfit text-darkblue-500 ">{frontmatter.quote}</p>
 </section>
 
 
@@ -211,28 +198,60 @@ talbeskrivelse="I Googles søgeresultater ved hjælp af SEO-optimeringer"
 <article class="hidden md:block  mt-24 mb-32 md:mb-32 px-24 ">
 <section class="grid grid-cols-2">
 
+<!------------------------------------- CARD ------------------------------>
+<section class="pt-14 md:pt-0 grid place-content-center">
 
+<div class=" place-content-center border-2 border-orange-500 rounded-3xl py-4 px-6 w-72 h-96">
+ <img x-bind:src="cases.coverimg" x-bind:alt="cases.coveralt">
 <div>
-card
+	<h4 class="font-albert text-lg font-medium uppercase">Det fik kunden hjælp til</h4>
+<ul class="list-disc pl-6 space-y-2">
+	<li class="font-albert text-sm">SEO</li>
+	<li class="font-albert text-sm">Strategisk rådgivning</li>
+	<li class="font-albert text-sm">Ny hjemmeside i Wordpress</li>
+</ul>
+</div>
 </div>
 
+</section>
+<!------------------------------------- CARD SLUT ------------------------------>
 <div>
 <h3 class="text-5xl text-darkblue-500 font-bold pb-10" >Vil du se mere af vores arbejde?</h3>
-<p class="text-darkblue-500 font-outfit">Her kan du se et udsnit af vores arbejde og lade dig inspirere. Hver kunde har haft unikke udfordringer og ambitioner, og vores samarbejder spænder fra strategisk rådgivning og specialiseret konsulentarbejde til skræddersyet digital markedsføring – både inden for vores ekspertområder og på tværs af alle digitale platforme.</p>
-<div class="grid place-content-start"><Button variant="primary" >Lær os at kende</Button></div>
+<p class="text-darkblue-500 font-outfit pb-16">Her kan du se et udsnit af vores arbejde og lade dig inspirere. Hver kunde har haft unikke udfordringer og ambitioner, og vores samarbejder spænder fra strategisk rådgivning og specialiseret konsulentarbejde til skræddersyet digital markedsføring – både inden for vores ekspertområder og på tværs af alle digitale platforme.</p>
+<div class="grid place-content-start"><Button variant="primary" >Alle cases</Button></div>
 </div
 >
 </section>
 </article>
 <!--------------------------------------- Mobil ------------------------------------>
 <article class="block md:hidden  mb-48 mt-24 px-6">
-<h3 class="text-3xl text-darkblue-500 font-bold pb-10" >Vil du se mere af vores arbejde?</h3>
-<section>
-card
-</section>
+<h3 class="text-3xl text-darkblue-500 font-bold" >Vil du se mere af vores arbejde?</h3>
+
+<!--------------------------------------- CARD ------------------------------------>
 
 <section>
-<p class="text-darkblue-500 font-outfit pb-16">Her kan du se et udsnit af vores arbejde og lade dig inspirere. Hver kunde har haft unikke udfordringer og ambitioner, og vores samarbejder spænder fra strategisk rådgivning og specialiseret konsulentarbejde til skræddersyet digital markedsføring – både inden for vores ekspertområder og på tværs af alle digitale platforme.</p>
+  
+
+<section class="py-10 md:pt-0 grid place-content-center">
+
+<div class=" place-content-center border-2 border-orange-500 rounded-3xl py-4 px-6 w-72 h-96">
+ <img x-bind:src="cases.coverimg" x-bind:alt="cases.coveralt">
+<div>
+	<h4 class="font-albert font-semibold text-3xl break-words pb-6 pt-4">Det fik kunden hjælp til</h4>
+<ul class="list-disc pl-6 space-y-2">
+	<li class="font-albert text-sm">SEO</li>
+	<li class="font-albert text-sm">Strategisk rådgivning</li>
+	<li class="font-albert text-sm">Ny hjemmeside i Wordpress</li>
+</ul>
+</div>
+</div>
+
+</section>
+ 
+</section>
+<!--------------------------------------- CARD SLUT ------------------------------------>
+<section>
+<p class="text-darkblue-500 font-outfit pb-10">Her kan du se et udsnit af vores arbejde og lade dig inspirere. Hver kunde har haft unikke udfordringer og ambitioner, og vores samarbejder spænder fra strategisk rådgivning og specialiseret konsulentarbejde til skræddersyet digital markedsføring – både inden for vores ekspertområder og på tværs af alle digitale platforme.</p>
 <div class="grid place-content-center md:place-content-start"><a href=""><Button variant="primary">Alle cases</Button></a></div> 
 </section>
 </article>
