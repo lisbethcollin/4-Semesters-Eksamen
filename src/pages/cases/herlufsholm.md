@@ -11,9 +11,9 @@ titel1: "Intensivt SEO-arbejde og nyt website"
 tekst1: "Hos Besa Digital har vi arbejdet intensivt med SEO-optimering for Heidi. Gennem en målrettet og datadrevet strategi har vi forbedret hendes synlighed i søgemaskinerne, hvilket har resulteret i en markant stigning i organisk trafik. 
 
 Vi har også designet og udviklet en ny, brugervenlig hjemmeside, der afspejler hendes professionelle brand og kommunikerer hendes budskaber klart og effektivt."
-mockupimg: "../public/mockup-herlufholm.png"
+mockupimg: "../mockup-herlufholm.png"
 mockupalttext: "hjemmeside vist på computer og smartphone"
-farverimg: "../public/herlufholmfarver.svg"
+farverimg: "../herlufholmfarver.svg"
 farveralttext: "Toner af grå farver"
 quotetitel: "Fantastisk samarbejde"
 quote: "Kæmpe ros for deres imødekommenhed og professionelle tilgang. Jeg er ovenud tilfreds og føler mig både set og hørt i modsætning til der, hvor jeg var tidligere.

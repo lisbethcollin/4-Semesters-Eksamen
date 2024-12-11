@@ -11,9 +11,9 @@ titel1: "Nyt Website og 250% flere leads"
 tekst1: "Forståelsen af OBI Medias B2B-markedssegment gjorde det muligt for os at skræddersy en Google Ads-kampagne, der målrettede nøglevirksomheder og beslutningstagere i deres branche. Gennem præcis segmentering og budgivningsstrategier har vi maksimeret annonceeffektiviteten og sikret en fremtrædende placering inden for relevante søgeresultater. Dette har resulteret i en stigning på 250% flere leads gennem Google Ads.
 
 Vores SEO-strategi blev udformet med et klart fokus på at styrke OBI Medias synlighed i organiske søgeresultater. Ved at implementere en kompleks kombination af on-page og off-page SEO-taktikker, sammen med nøgleordsanalyse og kvalitetslinkbygning, har vi opnået markante forbedringer i rangeringer og trafik."
-mockupimg: "../public/OBIMedia.png"
+mockupimg: "../OBIMedia.png"
 mockupalttext: "hjemmeside vist på computer og smartphone"
-farverimg: "../public/obifarver.svg"
+farverimg: "../obifarver.svg"
 farveralttext: "farvepalette med sort, gul og hvid"
 quotetitel: "Topklasse"
 quote: "Vi har haft fornøjelsen af at samarbejde med Besa over en længere periode, og vi kan kun give dem vores varmeste anbefalinger. De har leveret topklasse arbejde inden for både Google Ads, SEO og ikke mindst vores nye hjemmeside, som vi er utrolig glade for. Resultaterne taler for sig selv, og vi har oplevet en markant forbedring på alle fronter.

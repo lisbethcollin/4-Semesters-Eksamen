@@ -11,9 +11,9 @@ titel1: "Nyt nemt og brugervenligt"
 tekst1: "Vi udviklede en visuelt tiltalende og brugervenlig hjemmeside med en lettilgængelig navigation, der gjorde det nemt for besøgende at finde relevant information.
 
 Hjemmesiden indeholdt engagerende og informativt indhold om bindevævssygdomme og -dysfunktioner, samt klinikkens behandlinger og metoder."
-mockupimg: "../public/bindevævs.png"
+mockupimg: "../bindevævs.png"
 mockupalttext: "hjemmeside vist på computer og smartphone"
-farverimg: "../public/bindevævsfarver.svg"
+farverimg: "../bindevævsfarver.svg"
 farveralttext: "Mørk farvepalette med sort, gul og blå"
 quotetitel: "Fantastisk oplevelse"
 quote: "Jeg har haft en fantastiske oplevede med BESA Digital, som har hjulpet mig godt videre. Jeg vil gerne rose hele teamet hos Besas Digital som tager en meget seriøs tilgang til min markedsføring og altid er til rådighed. 
