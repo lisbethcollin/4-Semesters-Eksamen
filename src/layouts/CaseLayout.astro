@@ -7,7 +7,7 @@ import { Image } from 'astro:assets';
 import Obi from '../assets/images/obi.png';
 const {frontmatter} = Astro.props;
 ---
-<MainLayout title="Titel">
+<MainLayout title={frontmatter.title}>
     <!-------------------------------------- HERO SEKTION ------------------------------>
 
 	<article class="hidden md:block bg-cover bg-[url('/src/assets/images/heroweb.png')] mt-24 mb-32 md:mb-32">
