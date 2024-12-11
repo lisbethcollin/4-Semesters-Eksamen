@@ -3,6 +3,8 @@ import MainLayout from "./MainLayout.astro";
 import Number from '../components/Number.astro';
 import Button from '../components/Button.astro';
 import Kontakt from '../components/Kontakt.astro';
+import { Image } from 'astro:assets';
+import Obi from '../assets/images/obi.png';
 const {frontmatter} = Astro.props;
 ---
 <MainLayout title="Titel">
@@ -10,12 +12,12 @@ const {frontmatter} = Astro.props;
 
 	<article class="hidden md:block bg-cover bg-[url('/src/assets/images/heroweb.png')] mt-24 mb-32 md:mb-32">
 		<section class="grid grid-cols-1 gap-16 p-20 ">
-			<h1 class=" pt-24 text-6xl font-albert uppercase font-black text-darkblue-500"> {frontmatter.casetitle}</h1>
+			<h1 class=" pt-24 text-6xl font-albert uppercase font-black text-darkblue-500 leading-7">{frontmatter.casetitle}</h1>
 		</section>
 		<section class="grid grid-cols-2 gap-16 p-20">
 			<div class="col-start-2">
-		<h3 class="text-5xl text-darkblue-500 font-bold pb-10">Udfordringen</h3>
-			<p class="text-base max-w-md font-outfit text-darkblue-500 ">{frontmatter.udfordringen}</p>
+		<h3 class="text-5xl text-darkblue-500 font-bold pb-10 leading-7">Udfordringen</h3>
+			<p class="text-base max-w-md font-outfit text-darkblue-500 leading-7">{frontmatter.udfordringen}</p>
 		</div>
 		</section>
 	</article>
@@ -23,12 +25,12 @@ const {frontmatter} = Astro.props;
 <!-------------------------- mobil --------------------------->
 <article class="block md:hidden bg-cover bg-[url('/src/assets/images/heromobil.png')] pb-32 mt-24">
 	<section class="grid grid-cols-1 gap-16 px-6 md:hidden">
-	<h1 class="pt-24 mb-12 text-5xl font-albert uppercase pb-40 font-bold text-darkblue-500">{frontmatter.casetitle}</h1>
+	<h1 class="pt-24 mb-12 text-5xl font-albert uppercase pb-40 font-bold text-darkblue-500 leading-7">{frontmatter.casetitle}</h1>
 	
 	<section class="pb-40">
 		<div>
-			<h3 class="text-3xl text-darkblue-500 font-albert font-bold pb-10">Udfordringen</h3>
-			<p class="text-base max-w-md font-outfit text-darkblue-500">{frontmatter.udfordringen}</p>
+			<h3 class="text-3xl text-darkblue-500 font-albert font-bold pb-10 leading-7">Udfordringen</h3>
+			<p class="text-base max-w-md font-outfit text-darkblue-500 leading-7">{frontmatter.udfordringen}</p>
 		</div>
 		</section>
 </article>
@@ -39,8 +41,8 @@ const {frontmatter} = Astro.props;
 <article class="grid md:grid-cols-2 px-6 mb-40 md:px-24 ">
 
 <section>
-	<h3 class="text-3xl md:text-5xl  text-darkblue-500 font-albert font-bold pb-10">{frontmatter.titel1}</h3>
-	<p class="text-base max-w-md font-outfit text-darkblue-500">{frontmatter.tekst1}</p>
+	<h3 class="text-3xl md:text-5xl  text-darkblue-500 font-albert font-bold pb-10 leading-7">{frontmatter.titel1}</h3>
+	<p class="text-base max-w-md font-outfit text-darkblue-500 leading-7">{frontmatter.tekst1}</p>
 </section>
 
 
@@ -53,9 +55,9 @@ const {frontmatter} = Astro.props;
 <div>
 <hr class="border-blue-500 mt-2 mb-4">
 <ul class="list-disc pl-6 space-y-2">
-	<li class="font-albert text-sm">SEO</li>
-	<li class="font-albert text-sm">Strategisk rådgivning</li>
-	<li class="font-albert text-sm">Ny hjemmeside i Wordpress</li>
+	<li class="font-albert text-darkblue-500 text-sm">SEO</li>
+	<li class="font-albert text-darkblue-500 text-sm">Strategisk rådgivning</li>
+	<li class="font-albert text-darkblue-500 text-sm">Ny hjemmeside i Wordpress</li>
 </ul>
 </div>
 </div>
@@ -143,17 +145,19 @@ talbeskrivelse="I Googles søgeresultater ved hjælp af SEO-optimeringer"
 <article class="hidden md:block bg-cover bg-[url('/src/assets/images/heroweb.png')] mb-10 pb-56 py-48">
 <section class="grid grid-cols-2 px-24">
 <div>
-<h3 class="text-5xl text-darkblue-500 font-albert font-bold pb-10">{frontmatter.quotetitel}</h3>
+<h3 class="text-5xl text-darkblue-500 font-albert font-bold pb-10 leading-7">{frontmatter.quotetitel}</h3>
 <p class="text-5xl md:text-7xl text-blue-500 uppercase font-outfit font-bold" >“</p>
 <p class="font-outfit text-darkblue-500 leading-7">{frontmatter.quote}</p>
 </div>
 
 
 <div class="order-first grid ">
-	 <img src={frontmatter.kundeimg} alt={frontmatter.kundeimgalt} class="max-h-56" />
+	<div class="">
+	 <img src={frontmatter.kundeimg} alt={frontmatter.kundeimgalt} class="max-h-56 pb-6" />
 	 <div class="">
-	<p class="font-outfit text-darkblue-500">{frontmatter.kunde}</p>
+	<p class="font-outfit font-semibold text-darkblue-500">{frontmatter.kunde}</p>
 	<p class="font-outfit text-darkblue-500" >{frontmatter.kundebeskrivelse}</p>
+</div>
 </div>
 </div>
 </section>
@@ -162,9 +166,9 @@ talbeskrivelse="I Googles søgeresultater ved hjælp af SEO-optimeringer"
 <article class="block md:hidden bg-cover bg-[url('/src/assets/images/heromobil.png')] px-6 pt-40 pb-56 mt-24">
 
 <section class="pb-14">
-<h3 class="text-3xl text-darkblue-500 font-albert font-bold pb-10" >{frontmatter.quotetitel}</h3>
+<h3 class="text-3xl text-darkblue-500 font-albert font-bold pb-10 leading-7" >{frontmatter.quotetitel}</h3>
 <p class="text-5xl md:text-7xl text-blue-500 uppercase font-outfit font-bold" >“</p>
-<p class="font-outfit text-darkblue-500 ">{frontmatter.quote}</p>
+<p class="font-outfit text-darkblue-500 leading-7">{frontmatter.quote}</p>
 </section>
 
 
@@ -185,10 +189,10 @@ talbeskrivelse="I Googles søgeresultater ved hjælp af SEO-optimeringer"
 <article class="grid md:grid-cols-2 gap-16 md:gap-10 px-6 md:px-24 mb-48">
 
 <section>
-	<h3 class="text-3xl md:text-5xl text-darkblue-500 font-albert font-bold pb-16" >{frontmatter.titel1}</h3>
-	<p class="font-outfit text-darkblue-500">{frontmatter.tekst1}</p>
+	<h3 class="text-3xl md:text-5xl text-darkblue-500 font-albert font-bold pb-16 leading-7" >{frontmatter.titel1}</h3>
+	<p class="font-outfit text-darkblue-500 leading-7">{frontmatter.tekst1}</p>
 </section>
- <img src={frontmatter.tekst2img} alt={frontmatter.tekst2imgalt} class="h-full w-full" />
+ <img src={frontmatter.tekst2img} alt={frontmatter.tekst2imgalt} class=" w-full" />
 
 </article>
 <!------------------------------------- TEKST 2 SEKTION SLUT  ---------------------------->
@@ -201,14 +205,14 @@ talbeskrivelse="I Googles søgeresultater ved hjælp af SEO-optimeringer"
 <!------------------------------------- CARD ------------------------------>
 <section class="pt-14 md:pt-0 grid place-content-center">
 
-<div class=" place-content-center border-2 border-orange-500 rounded-3xl py-4 px-6 w-72 h-96">
- <img x-bind:src="cases.coverimg" x-bind:alt="cases.coveralt">
+<div class="flex flex-col border-2 border-orange-500 rounded-3xl py-4 px-6 w-72 h-96 ">
+  <Image src={Obi} alt="" class=" pb-6"/>
 <div>
-	<h4 class="font-albert text-lg font-medium uppercase">Det fik kunden hjælp til</h4>
+	<h4 class="font-albert text-3xl pb-6 font-medium text-darkblue-500">OBI Media</h4>
 <ul class="list-disc pl-6 space-y-2">
-	<li class="font-albert text-sm">SEO</li>
-	<li class="font-albert text-sm">Strategisk rådgivning</li>
-	<li class="font-albert text-sm">Ny hjemmeside i Wordpress</li>
+	<li class="font-albert text-darkblue-500 text-sm">SEO</li>
+	<li class="font-albert text-darkblue-500 text-sm">Strategisk rådgivning</li>
+	<li class="font-albert text-darkblue-500 text-sm">Ny hjemmeside i Wordpress</li>
 </ul>
 </div>
 </div>
@@ -216,32 +220,34 @@ talbeskrivelse="I Googles søgeresultater ved hjælp af SEO-optimeringer"
 </section>
 <!------------------------------------- CARD SLUT ------------------------------>
 <div>
-<h3 class="text-5xl text-darkblue-500 font-bold pb-10" >Vil du se mere af vores arbejde?</h3>
-<p class="text-darkblue-500 font-outfit pb-16">Her kan du se et udsnit af vores arbejde og lade dig inspirere. Hver kunde har haft unikke udfordringer og ambitioner, og vores samarbejder spænder fra strategisk rådgivning og specialiseret konsulentarbejde til skræddersyet digital markedsføring – både inden for vores ekspertområder og på tværs af alle digitale platforme.</p>
-<div class="grid place-content-start"><Button variant="primary" >Alle cases</Button></div>
+<h3 class="text-5xl text-darkblue-500 font-bold pb-10 leading-7" >Vil du se mere af vores arbejde?</h3>
+<p class="text-darkblue-500 font-outfit pb-16 leading-7">Her kan du se et udsnit af vores arbejde og lade dig inspirere. Hver kunde har haft unikke udfordringer og ambitioner, og vores samarbejder spænder fra strategisk rådgivning og specialiseret konsulentarbejde til skræddersyet digital markedsføring – både inden for vores ekspertområder og på tværs af alle digitale platforme.</p>
+<div class="grid place-content-start"> <a href="/../cases.html"><Button variant="primary" >Alle cases</Button></a></div>
 </div
 >
 </section>
 </article>
 <!--------------------------------------- Mobil ------------------------------------>
 <article class="block md:hidden  mb-48 mt-24 px-6">
-<h3 class="text-3xl text-darkblue-500 font-bold" >Vil du se mere af vores arbejde?</h3>
+<h3 class="text-3xl text-darkblue-500 font-bold leading-7" >Vil du se mere af vores arbejde?</h3>
 
 <!--------------------------------------- CARD ------------------------------------>
 
 <section>
-  
+
 
 <section class="py-10 md:pt-0 grid place-content-center">
 
-<div class=" place-content-center border-2 border-orange-500 rounded-3xl py-4 px-6 w-72 h-96">
- <img x-bind:src="cases.coverimg" x-bind:alt="cases.coveralt">
-<div>
-	<h4 class="font-albert font-semibold text-3xl break-words pb-6 pt-4">Det fik kunden hjælp til</h4>
+<div class=" flex flex-col border-2  border-orange-500 rounded-3xl py-4 px-6 w-72 h-96 ">
+	
+	  <Image src={Obi} alt="" class="pb-6"/>
+
+<div class="">
+	<h4 class="font-albert font-semibold text-3xl break-words pb-6 pt-4 text-darkblue-500">OBI Media</h4>
 <ul class="list-disc pl-6 space-y-2">
-	<li class="font-albert text-sm">SEO</li>
-	<li class="font-albert text-sm">Strategisk rådgivning</li>
-	<li class="font-albert text-sm">Ny hjemmeside i Wordpress</li>
+	<li class="font-albert text-darkblue-500 text-sm">SEO</li>
+	<li class="font-albert text-darkblue-500 text-sm">Strategisk rådgivning</li>
+	<li class="font-albert text-darkblue-500 text-sm">Ny hjemmeside i Wordpress</li>
 </ul>
 </div>
 </div>
@@ -251,15 +257,15 @@ talbeskrivelse="I Googles søgeresultater ved hjælp af SEO-optimeringer"
 </section>
 <!--------------------------------------- CARD SLUT ------------------------------------>
 <section>
-<p class="text-darkblue-500 font-outfit pb-10">Her kan du se et udsnit af vores arbejde og lade dig inspirere. Hver kunde har haft unikke udfordringer og ambitioner, og vores samarbejder spænder fra strategisk rådgivning og specialiseret konsulentarbejde til skræddersyet digital markedsføring – både inden for vores ekspertområder og på tværs af alle digitale platforme.</p>
-<div class="grid place-content-center md:place-content-start"><a href=""><Button variant="primary">Alle cases</Button></a></div> 
+<p class="text-darkblue-500 font-outfit pb-10 leading-7">Her kan du se et udsnit af vores arbejde og lade dig inspirere. Hver kunde har haft unikke udfordringer og ambitioner, og vores samarbejder spænder fra strategisk rådgivning og specialiseret konsulentarbejde til skræddersyet digital markedsføring – både inden for vores ekspertområder og på tværs af alle digitale platforme.</p>
+<div class="grid place-content-center md:place-content-start"><a href="/../cases.html"><Button variant="primary">Alle cases</Button></a></div> 
 </section>
 </article>
 
 
 <!------------------------------------- NÆSTE CASE SEKTION   ------------------------------>
 				<!--------------------------------  KONTAKT SEKTION ---------------------->
-<article class="mb-32 px-6 md:px-24 md:mb-56">
+<article class="mb-32 md:mb-56">
 	<Kontakt 
 		title="Vil du vide om vi også kan hjælpe dig?"
 		kontaktbeskrivelse="Har du spørgsmål eller vil vide mere om hvordan vi har skabt målbare resultater for vores kunder, så send os en besked. Vi er klar til at finde den rette løsning til dig."
