@@ -2,7 +2,7 @@
 
 ---
 
-<section x-data="{ alleservices: []}" x-init="alleservices = await (await fetch('services.json')).json();" class="flex flex-wrap justify-center gap-6 m-auto ">
+<section x-data="{ alleservices: []}" x-init="alleservices = await (await fetch('services.json')).json();" class="flex flex-wrap justify-center gap-6 m-auto text-darkblue-500">
     <template x-for="services in alleservices" :key="services.id">
         <ul>
             <li>
