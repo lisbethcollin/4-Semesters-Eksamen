@@ -41,7 +41,7 @@
         "id": "4",
         "coverimg": "../public/caseslistview/bibs.png",
         "coveralt": "BibsWorld",
-        "casetitle": "BIBSWorld.com",
+        "casetitle": "BIBS-<br/>World.com",
         "casepunkt": [
             "Digital marketing"
         ]
@@ -88,7 +88,7 @@
         "id": "9",
         "coverimg": "../public/caseslistview/vinosupremo.png",
         "coveralt": "Vinosupremo",
-        "casetitle": "Vinosupremo.dk",
+        "casetitle": "Vino-<br/>supremo.dk",
         "casepunkt": [
             "Digital marketing"
         ]
@@ -118,7 +118,7 @@
         "id": "12",
         "coverimg": "../public/caseslistview/lejdinmaskine.png",
         "coveralt": "Lej Din Maskine",
-        "casetitle": "LejDinMaskine",
+        "casetitle": "Lej Din Maskine",
         "casepunkt": [
             "Digital marketing"
         ]
@@ -144,7 +144,7 @@
     {
         "id": "15",
         "coverimg": "../public/caseslistview/healingbytorben.png",
-        "coveralt": "Healing by<br/>Torben",
+        "coveralt": "Healing by Torben",
         "casetitle": "Healing by Torben",
         "casepunkt": [
             "Digital marketing",
