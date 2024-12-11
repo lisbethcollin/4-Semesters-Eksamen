@@ -13,7 +13,7 @@ tekst1: "Vi udviklede en visuelt tiltalende og brugervenlig hjemmeside med en le
 Hjemmesiden indeholdt engagerende og informativt indhold om bindevævssygdomme og -dysfunktioner, samt klinikkens behandlinger og metoder."
 mockupimg: "../public/bindevævs.png"
 mockupalttext: "hjemmeside vist på computer og smartphone"
-farverimg: "../public/herlufholmfarver.svg"
+farverimg: "../public/bindevævsfarver.svg"
 farveralttext: "Mørk farvepalette med sort, gul og blå"
 quotetitel: "Fantastisk oplevelse"
 quote: "Jeg har haft en fantastiske oplevede med BESA Digital, som har hjulpet mig godt videre. Jeg vil gerne rose hele teamet hos Besas Digital som tager en meget seriøs tilgang til min markedsføring og altid er til rådighed. 
@@ -25,6 +25,6 @@ titel2: "Flere Klienter og Større Synlighed"
 tekst2: "Den nye hjemmeside har forbedret klinikkens online tilstedeværelse, øget brugertilfredsheden og skabt en effektiv platform for at tiltrække nye klienter og samarbejdspartnere. 
 
 Dette projekt viser vores bureaus evne til at levere skræddersyede og effektive løsninger, der imødekommer kundernes specifikke behov og mål."
-tekst2img: "../herluf2.png"
+tekst2img: "../bindevævs2.png"
 tekst2imgalt: "dame i sweater der holder en skål mad i hænderne"
 ---
