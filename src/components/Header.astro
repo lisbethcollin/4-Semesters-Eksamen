@@ -11,17 +11,17 @@ import Button from '../components/Button.astro';
             <a href="/../index.html"><Image class="w-40" src={logo} alt=""/></a>
         </div>
         <div class="flex flex-row gap-12 items-center">
-        <nav id="desktopmenu" class="hidden lg:block">
-            <ul class="flex flex-row gap-4 text-xl text-darkblue-500 font-albert ">
-                <li class="hover:text-orange-500 hover:underline active:text-blue-500 active:underline"><a href="#">Services</a></li>
-                <li class="hover:text-orange-500 hover:underline active:text-blue-500 active:underline px-12"><a href="/../omos.html">Om os</a></li>
-                <li class="hover:text-orange-500 hover:underline active:text-blue-500 active:underline"><a href="/../cases.html">Cases</a></li>
-                <li class="hover:text-orange-500 hover:underline active:text-blue-500 active:underline pl-12"><a href="#">Blog</a></li>
-            </ul>
-        </nav>
-         <div class="hidden lg:block">
-          <Button variant="primary" >Kontakt os</Button>
-        </div>
+            <nav id="desktopmenu" class="hidden lg:block">
+                <ul class="flex flex-row gap-4 text-xl text-darkblue-500 font-albert ">
+                    <li class="hover:text-orange-500 hover:underline active:text-blue-500 active:underline"><a href="#">Services</a></li>
+                    <li class="hover:text-orange-500 hover:underline active:text-blue-500 active:underline px-12"><a href="/../omos.html">Om os</a></li>
+                    <li class="hover:text-orange-500 hover:underline active:text-blue-500 active:underline"><a href="/../cases.html">Cases</a></li>
+                    <li class="hover:text-orange-500 hover:underline active:text-blue-500 active:underline pl-12"><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+            <div class="hidden lg:block">
+            <Button variant="primary" >Kontakt os</Button>
+            </div>
         </div>
         <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu"><Image src={burgermenu} alt=""/></button>
     </div>
@@ -37,5 +37,4 @@ import Button from '../components/Button.astro';
           <Button variant="primary" >Kontakt os</Button>
         </div>
     </nav>
-     
 </div>

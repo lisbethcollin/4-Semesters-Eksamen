@@ -9,16 +9,16 @@ const { kontaktimg, kontaktalt, kontaktbeskrivelse, personnavn, personbeskrivels
             <h3 class="font-albert font-bold text-3xl mb-6">{title}</h3>
             <p class="font-outfit pb-6 leading-7">{kontaktbeskrivelse}</p>
         </div>
-    <div class="col-span-1  md:col-span-3">
-    </div>
-
+        <div class="col-span-1 md:col-span-3">
+        </div>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-5 gap-10 pt-4">
         <div class="col-span-1 md:col-span-2 text-darkblue-500">
-        <img src={kontaktimg} alt={kontaktalt}>
-        <p class="font-outfit font-semibold pt-6">{personnavn}</p>
-        <p class="font-outfit pt-2">{personbeskrivelse}</p>
-    </div>
+            <img src={kontaktimg} alt={kontaktalt}>
+            <p class="font-outfit font-semibold pt-6">{personnavn}</p>
+            <p class="font-outfit pt-2">{personbeskrivelse}</p>
+        </div>
+        
     <!-------------------------------- form -------------------------------->
         <article class="col-span-1  md:col-span-3" >
             <form>
@@ -58,11 +58,8 @@ const { kontaktimg, kontaktalt, kontaktbeskrivelse, personnavn, personbeskrivels
                             <Button>Send besked</Button>
                         </div>
                     </section>
-                    
                 </div>
             </form>
         </article>
-
- 
     </div>
 </section>

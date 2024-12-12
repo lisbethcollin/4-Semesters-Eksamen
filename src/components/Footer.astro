@@ -9,90 +9,85 @@ import insta from '../assets/images/insta.svg';
 import you from '../assets/images/you.svg';
 ---
 <!-- web -->
- <hr class="border-2 border-orange-500">
+<hr class="border-2 border-orange-500">
 <section class="bg-beige-500">
+    <section class="grid gap-10 grid-cols-1 md:grid-cols-4 py-16 px-6 md:p-24"> 
+        
+        <article class="text-darkblue-500">
+            <h5 class="text-xl font-albert font-bold ">Besa Digital</h5> 
+            <br>
+            <p class="text-base font-outfit">Hos Besa Digital er et løfte,</p>
+            <p class="text-base font-outfit"> et løfte hvor vi holde det vi lover</p> 
+            <br>
+            <p class="text-base font-outfit">Handelsbetingelser / Privatlivspolitik</p> 
+            <br>
+            <Image src={google} alt="google" width="140" height="70" class=""/>
+        </article>
 
-<section class="grid gap-10 grid-cols-1 md:grid-cols-4 py-16 px-6 md:p-24"> 
-    
-    <article class="text-darkblue-500">
-        <h5 class="text-xl font-albert font-bold ">Besa Digital</h5> 
-        <br>
-        <p class="text-base font-outfit">Hos Besa Digital er et løfte,</p>
-        <p class="text-base font-outfit"> et løfte hvor vi holde det vi lover</p> 
-        <br>
-        <p class="text-base font-outfit">Handelsbetingelser / Privatlivspolitik</p> 
-        <br>
-       <Image src={google} alt="google" width="140" height="70" class=""/>
-    </article>
+        <article class="text-darkblue-500">
+            <h5 class="text-xl font-albert font-bold ">Kontakt os</h5>
+            <br>
+            <p class="text-base font-outfit">CVR: 43003399</p> 
+            <br>
+            <p class="text-base font-outfit">Vester Voldgade 83, 3. th</p> 
+            <p class="text-base font-outfit">1552 København V</p> 
+            <br>
+            <p class="text-base font-outfit">Tlf: +45 93 93 87 57</p> 
+            <p class="text-base font-outfit">Mail: kontakt@besadigital.dk</p> 
 
-    <article class="text-darkblue-500">
-        <h5 class="text-xl font-albert font-bold ">Kontakt os</h5>
-         <br>
-        <p class="text-base font-outfit">CVR: 43003399</p> 
-        <br>
-        <p class="text-base font-outfit">Vester Voldgade 83, 3. th</p> 
-        <p class="text-base font-outfit">1552 København V</p> 
-        <br>
-        <p class="text-base font-outfit">Tlf: +45 93 93 87 57</p> 
-        <p class="text-base font-outfit">Mail: kontakt@besadigital.dk</p> 
+        </article>
 
-    </article>
+        <article class="text-darkblue-500">
+            <h5 class="text-xl font-albert font-bold ">Vores services</h5>
+            <br>
+            <ul class="list-disc text-base font-outfit grid grid-cols-1 gap-1 px-6">
+                <li>
+                    <a href="">Strategisk rådgivning</a>
+                </li>
+                <li>
+                    <a href="">SEO</a>
+                </li>
+                <li> 
+                    <a href="">WordPress</a> 
+                </li>
+                <li> 
+                    <a href="">Google Ads</a> 
+                </li>
+                <li> 
+                    <a href="">Nyhedsbreve</a> 
+                </li>
+                <li> 
+                    <a href="">Content creating</a> 
+                </li>
+                <li> 
+                    <a href="">SoMe strategier</a> 
+                </li>
+                <li> 
+                    <a href="">Tekst forfatning</a> 
+                </li>
+                <li> 
+                    <a href="">AI Løsninger</a> 
+                </li>
+            </ul>
+        </article>
 
-    <article class="text-darkblue-500">
-        <h5 class="text-xl font-albert font-bold ">Vores services</h5>
-        <br>
-        <ul class="list-disc text-base font-outfit grid grid-cols-1 gap-1 px-6">
-            <li>
-                <a href="">Strategisk rådgivning</a>
-            </li>
-            <li>
-                <a href="">SEO</a>
-            </li>
-            <li> 
-                <a href="">WordPress</a> 
-            </li>
-             <li> 
-                <a href="">Google Ads</a> 
-            </li>
-             <li> 
-                <a href="">Nyhedsbreve</a> 
-            </li>
-             <li> 
-                <a href="">Content creating</a> 
-            </li>
-             <li> 
-                <a href="">SoMe strategier</a> 
-            </li>
-             <li> 
-                <a href="">Tekst forfatning</a> 
-            </li>
-             <li> 
-                <a href="">AI Løsninger</a> 
-            </li>
-        </ul>
-    </article>
-
-    <article class="text-darkblue-500">
-        <div class="flex flex-col h-full justify-between">
-            
-            <div>
-        <h5 class="text-xl font-albert font-bold">Vi støtter</h5> 
-        <br>
-        <div><Image src={bornebyer} alt="bornebyer" width="230" height="50" class="pb-10"/></div>
+        <article class="text-darkblue-500">
+            <div class="flex flex-col h-full justify-between">
+                <div>
+                <h5 class="text-xl font-albert font-bold">Vi støtter</h5> 
+                <br>
+                    <div>
+                        <Image src={bornebyer} alt="bornebyer" width="230" height="50" class="pb-10"/>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <Image src={faec} alt="faecbook" width="18" height="36" class=""/>
+                    <Image src={x} alt="some" width="34" height="36" class=""/>
+                    <Image src={link} alt="linkedin" width="30" height="36" class=""/>
+                    <Image src={insta} alt="instagram" width="34" height="36" class=""/>
+                    <Image src={you} alt="youtube" width="47" height="36" class=""/>
+                </div>
             </div>
-        
-        
-
-        <div class="flex items-center space-x-4">
-            <Image src={faec} alt="faecbook" width="18" height="36" class=""/>
-            <Image src={x} alt="some" width="34" height="36" class=""/>
-            <Image src={link} alt="linkedin" width="30" height="36" class=""/>
-            <Image src={insta} alt="instagram" width="34" height="36" class=""/>
-            <Image src={you} alt="youtube" width="47" height="36" class=""/>
-          </div>
-
-    </article>
-
-</section>
-
+        </article>
+    </section>
 </section>

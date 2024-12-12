@@ -4,36 +4,28 @@ const { personrimg, personralt, personrightnavn, personrightbeskrivelse, personr
 ---
 
 <article class=" grid md:grid-cols-2 gap-6 md:gap-28" >
-    
-<div class="hidden md:block">
- <img src={personrimg} alt={personralt}>
-</div>
-
-<section class="text-darkblue-500 ">
-
-    <div class="">
-        <h4 class="font-albert text-3xl md:text-5xl font-bold pb-2">{personrightnavn}</h4>
-        <p class="font-albert text-xl md:text-3xl font-light pb-4" >{personrighttitel}</p>
+    <div class="hidden md:block">
+        <img src={personrimg} alt={personralt}>
     </div>
+    <section class="text-darkblue-500 ">
+        <div class="">
+            <h4 class="font-albert text-3xl md:text-5xl font-bold pb-2">{personrightnavn}</h4>
+            <p class="font-albert text-xl md:text-3xl font-light pb-4" >{personrighttitel}</p>
+        </div>
+        <div>
+            <img src={personrimg} alt={personralt}  class="block max-h-96 mx-auto md:hidden">
+        </div>
+        <div>
+            <hr class="border-blue-500 border-2 hidden md:block">
+            <p class="font-outfit text-base pt-6 pb-12 leading-7">{personrightbeskrivelse}</p>
+            <p class="font-bold font-outfit text-base pb-4">Jeg kan hjælpe dig med</p>
 
-<div>
- <img src={personrimg} alt={personralt}  class="block max-h-96 mx-auto md:hidden">
-</div>
-
-    <div>
-        <hr class="border-blue-500 border-2 hidden md:block">
-        <p class="font-outfit text-base pt-6 pb-12 leading-7">{personrightbeskrivelse}</p>
-         <p class="font-bold font-outfit text-base pb-4">Jeg kan hjælpe dig med</p>
-
-    <ul class="font-outfit text-base list-disc grid grid-col-1 lg:grid-cols-2 gap-4 px-6">
-        {kompetencer.map(kompetence => (
-            <li>{kompetence}</li>
-        ))}
-    </ul>
-</div>
-
-</section>
-
-
+            <ul class="font-outfit text-base list-disc grid grid-col-1 lg:grid-cols-2 gap-4 px-6">
+                {kompetencer.map(kompetence => (
+                    <li>{kompetence}</li>
+                ))}
+            </ul>
+        </div>
+    </section>
 </article>
 
