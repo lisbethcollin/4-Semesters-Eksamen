@@ -5,12 +5,12 @@ import Kontakt from '../components/Kontakt.astro';
 import CardCase from '../components/CardCase.astro';
 const kunde = await Astro.glob('../pages/cases/*.md');
 
-const sorteredekunde = kunde.sort((a, b) => {
+/* const sorteredekunde = kunde.sort((a, b) => {
     if (a.frontmatter.date < b.frontmatter.date) return -1;
     if (a.frontmatter.date > b.frontmatter.date) return 1;
     return 0;
 });
-const udvalgtekunde = sorteredekunde.slice(0, 3);
+const udvalgtekunde = sorteredekunde.slice(0, 3); */
 ---
 <MainLayout title="Cases">
 	<!-------------------------------- HERO SEKTION ---------------------->
