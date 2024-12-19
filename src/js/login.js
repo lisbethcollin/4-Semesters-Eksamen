@@ -114,6 +114,7 @@ window.addEventListener("load", () => {
         div.style.height = "100vh";
         div.style.position = "fixed";
         div.style.zIndex = "9999";
+        div.style.background = "black"; // Flyt baggrunden hertil hvis ønsket
 
         div.innerHTML = "<iform-login />";
         document.body.prepend(div);
