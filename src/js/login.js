@@ -113,6 +113,8 @@ window.addEventListener("load", () => {
         div.style.width = "100vw";
         div.style.height = "100vh";
         div.style.position = "fixed";
+        div.style.top = "0"; // Tilføj denne
+        div.style.left = "0"; // Tilføj denne
         div.style.zIndex = "9999";
         div.style.background = "black"; // Flyt baggrunden hertil hvis ønsket
 
