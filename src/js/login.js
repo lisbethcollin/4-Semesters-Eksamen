@@ -1,18 +1,21 @@
+import { style } from "motion";
+
 class Login extends HTMLElement {
-  constructor() {
-    super();
-    this.attachShadow({
-      mode: "open"
-    }); //apparently slots only work with the shadow dom?
-  }
-  connectedCallback() {
-    this.html = `<style>
+    constructor() {
+        super();
+        this.attachShadow({
+            mode: "open"
+        }); //apparently slots only work with the shadow dom?
+    }
+    connectedCallback() {
+        this.html = `<style>
       /****** LOGIN MODAL ******/
       #login-modal {
           background:black;
           position:fixed;
           width:100vw;
           height:100vh;
+          z-index:9999;
       }
       .loginmodal-container {
         padding: 30px;
@@ -86,33 +89,33 @@ class Login extends HTMLElement {
         </div>
       </div>
     </div>`;
-    this.render();
+        this.render();
 
-    this.shadowRoot.querySelector("form").addEventListener("submit", e => {
-      e.preventDefault();
-      if (
-        this.shadowRoot.querySelector("input[name=pass]").value === "kea"
-      ) {
-        document.querySelector("#totally-delete-me").remove();
-        localStorage.setItem("iform-totally-logged-in", true);
-      }
-    });
-  }
-  render() {
-    this.shadowRoot.innerHTML = this.html;
-  }
+        this.shadowRoot.querySelector("form").addEventListener("submit", e => {
+            e.preventDefault();
+            if (
+                this.shadowRoot.querySelector("input[name=pass]").value === "kea"
+            ) {
+                document.querySelector("#totally-delete-me").remove();
+                localStorage.setItem("iform-totally-logged-in", true);
+            }
+        });
+    }
+    render() {
+        this.shadowRoot.innerHTML = this.html;
+    }
 }
 customElements.define("iform-login", Login);
 window.addEventListener("load", () => {
-  if (!localStorage.getItem("iform-totally-logged-in")) {
-    const div = document.createElement("div");
-    div.id = "totally-delete-me";
-    div.style.width = "100vw";
-    div.style.height = "100vh";
-    div.style.position = "fixed";
-    div.style.zIndex = "9999";
+    if (!localStorage.getItem("iform-totally-logged-in")) {
+        const div = document.createElement("div");
+        div.id = "totally-delete-me";
+        div.style.width = "100vw";
+        div.style.height = "100vh";
+        div.style.position = "fixed";
+        div.style.zIndex = "9999";
 
-    div.innerHTML = "<iform-login />";
-    document.body.prepend(div);
-  }
+        div.innerHTML = "<iform-login />";
+        document.body.prepend(div);
+    }
 });
